@@ -28,6 +28,11 @@
     display: flex;
     align-items: center;
   }
+
+  .header-logo {
+    display: block;
+    text-decoration: none;
+  }
   
   .header-logo1 {
     color: var(--hover-color);
@@ -60,6 +65,7 @@
     font-weight: 500;
     line-height: normal;
     letter-spacing: 0.02em;
+    text-decoration: none;
   }
   
   .header-link:hover {
@@ -81,6 +87,7 @@
     font-weight: 500;
     line-height: normal;
     letter-spacing: 0.02em;
+    text-decoration: none;
   }
   
   .header-contacts:hover {
@@ -256,6 +263,7 @@
   .footer-logo {
     margin-bottom: 20px;
     display: block;
+    text-decoration: none;
   }
   
   .footer-logo1 {
@@ -298,6 +306,7 @@
     letter-spacing: 0.03em;
     display: block;
     margin-bottom: 9px;
+    text-decoration: none;
   }
   
   .footer-phone {
@@ -306,5 +315,6 @@
     font-weight: 400;
     line-height: 1.7;
     letter-spacing: 0.03em;
+    text-decoration: none;
   }
   
