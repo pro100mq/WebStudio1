@@ -109,6 +109,8 @@
   .hero-list {
     display: flex;
     justify-content: center;
+    gap: 8px;
+    padding-bottom: 50px;
   }
   
   .hero-button {
@@ -119,11 +121,8 @@
     line-height: 1.6;
     letter-spacing: 0.03em;
     border-radius: 4px;
-    width: 125px;
-    height: 38px;
-    flex-shrink: 0;
     background: var(--background-color-ourteam);
-    margin-bottom: 50px;
+    padding: 6px 22px 6px 22px;
   }
   
   .hero-button:hover {
@@ -160,6 +159,8 @@
     letter-spacing: 0.02em;
     margin-top: 20px;
     margin-bottom: 4px;
+    margin-left: 24px;
+    margin-right: 24px;
   }
   
   .hero-text {
@@ -169,6 +170,8 @@
     line-height: 1.8;
     letter-spacing: 0.04em;
     margin-bottom: 20px;
+    margin-left: 24px;
+    margin-right: 24px;
   }
   
   footer {
