@@ -110,33 +110,28 @@
     display: flex;
     justify-content: center;
     gap: 8px;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
   }
   
   .hero-button {
     color: var(--text-color);
     text-align: center;
     font-size: 16px;
-    font-weight: 500;
     line-height: 1.6;
-    letter-spacing: 0.03em;
     border-radius: 4px;
     background: var(--background-color-ourteam);
-    padding: 6px 22px 6px 22px;
+    padding: 6px 22px;
+    outline: none;
+    border: none;
   }
   
   .hero-button:hover {
     color: var(--accent-color);
     text-align: center;
     font-size: 16px;
-    font-weight: 500;
     line-height: 1.6;
-    letter-spacing: 0.03em;
-  
     border-radius: 4px;
     background: var(--hover-color);
-    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
-      0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
   }
 
   .hero-posters {
@@ -144,13 +139,11 @@
     align-items: center;
     flex-wrap: wrap;
     column-gap: 30px;
-    row-gap: 20px;
+    row-gap: 30px;
   }
 
   .hero-poster {
     flex-basis: calc((100% - (30px * 2)) / 3);
-    height: 404px;
-
   }
   
   .hero-title {
@@ -161,8 +154,8 @@
     letter-spacing: 0.02em;
     margin-top: 20px;
     margin-bottom: 4px;
-    margin-left: 24px;
-    margin-right: 24px;
+    padding-left: 24px;
+    padding-right: 24px;
   }
   
   .hero-text {
@@ -172,8 +165,8 @@
     line-height: 1.8;
     letter-spacing: 0.04em;
     padding-bottom: 20px;
-    margin-left: 24px;
-    margin-right: 24px;
+    padding-left: 24px;
+    padding-right: 24px;
   }
   
   footer {
