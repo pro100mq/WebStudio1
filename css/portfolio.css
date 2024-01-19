@@ -6,6 +6,7 @@
     --additional-text-color: #757575;
     --hover-color: #2196f3;
     --logo-text-color: #000;
+    --border-linia: #eeeeee;
   }
   
   
@@ -143,15 +144,17 @@
   }
 
   .hero-poster {
-    flex-basis: calc((100% - (30px * 2)) / 3);
-  }
+    flex-basis: ((100% - 2 * 30px) / 3);
+    background-color: var(--accent-color);
+    border: 1px solid #EEEEEE
+    }
   
   .hero-title {
     color: var(--text-color);
     font-size: 18px;
     font-weight: 700;
     line-height: 2;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.06em;
     margin-top: 20px;
     margin-bottom: 4px;
     padding-left: 24px;

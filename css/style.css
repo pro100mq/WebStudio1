@@ -266,6 +266,10 @@ body {
   gap: 30px;
 }
 
+.team-item {
+  background-color: var(--accent-color);
+}
+
 .team-photo {
   margin-bottom: 30px;
 }
