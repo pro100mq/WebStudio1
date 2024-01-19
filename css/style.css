@@ -168,25 +168,25 @@ body {
 }
 
 .info-item:first-child::before {
-  content: url(../img/antenna.png);
+  content: url(../img/antenna.svg);
   width: 70px;
   height: 70px;
 }
 
 .info-item:nth-child(2)::before {
-  content: url(../img/clock.png);
+  content: url(../img/clock.svg);
   width: 70px;
   height: 70px;
 }
 
 .info-item:nth-child(3)::before {
-  content: url(../img/diagram.png);
+  content: url(../img/diagram.svg);
   width: 70px;
   height: 70px;
 }
 
 .info-item:last-child::before {
-  content: url(../img/astronaut.png);
+  content: url(../img/astronaut.svg);
   width: 70px;
   height: 70px;
 }
@@ -242,6 +242,7 @@ body {
 .team-section {
   padding-top: 94px;
   padding-bottom: 94px;
+  background-color: var(--background-color-ourteam);
 }
 
 .team-container {
