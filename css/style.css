@@ -13,7 +13,6 @@ body {
 }
 
 .container {
-  outline: solid 2px red;
   width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
@@ -101,7 +100,7 @@ body {
 /* Hero Section */
 
 .hero-section {
-  background-color: var(--background-color-accent);
+  background-image: url(../img/working.webp);
   padding-top: 200px;
   padding-bottom: 200px;
 }
@@ -139,6 +138,7 @@ body {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   cursor: pointer;
   padding: 10px 32px 10px 32px;
+  border: none;
 }
 
 /* Info Section */
@@ -165,6 +165,7 @@ body {
   padding: 25px 100px 25px 100px;
   width: 270px;
   height: 120px;
+  margin-bottom: 30px;
 }
 
 .info-item:first-child::before {
@@ -268,6 +269,7 @@ body {
 
 .team-item {
   background-color: var(--accent-color);
+  box-shadow: 0px 2px 1px 0px #00000033, 0px 1px 1px 0px #00000024, 0px 1px 3px 0px #0000001F;
 }
 
 .team-photo {
