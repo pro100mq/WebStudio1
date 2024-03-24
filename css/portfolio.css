@@ -6,7 +6,7 @@
   --additional-text-color: #757575;
   --hover-color: #2196f3;
   --logo-text-color: #000;
-  --border-linia: #eeeeee;
+  --border-linia: #ECECEC;
 }
 
 body {
@@ -22,6 +22,7 @@ body {
 .header {
   padding-top: 24px;
   padding-bottom: 25px;
+  border: var(--border-linia) 1px solid;
 }
 
 .header-container {
@@ -215,7 +216,8 @@ body {
 }
 
 .hero-link:focus {
-
+  text-decoration: none;
+  outline: none;
 }
 
 .hero-poster {
