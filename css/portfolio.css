@@ -210,13 +210,22 @@ body {
   row-gap: 30px;
 }
 
+.hero-link {
+  text-decoration: none;
+}
+
+.hero-link:focus {
+
+}
+
 .hero-poster {
   flex-basis: ((100% - 2 * 30px) / 3);
   background-color: var(--accent-color);
   border: 1px solid #eeeeee;
 }
 
-.hero-poster:hover {
+.hero-poster:hover,
+.hero-link:focus {
   box-shadow: 1px 4px 6px 0px #00000029, 0px 4px 4px 0px #0000000f,
     0px 1px 1px 0px #0000001f;
   cursor: pointer;
