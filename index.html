@@ -367,6 +367,7 @@
           <h1 class="basement-form-title">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</h1>
           <div class="basement-form-container">
             <input
+              required            
               type="text"
               name=""
               class="basement-form-input"
@@ -395,18 +396,18 @@
             <li class="modal-item">
               <label class="modal-label" for="">Ім'я</label>
               <div class="modal-input-container">
-                <input class="modal-input" type="name" />
+                <input required class="modal-input" type="name" />
                 <svg class="modal-icon">
-                  <use href="./img/symbol-defs.svg#icon-human"></use>
+                  <use href="./img/symbol-defs.svg#icon-person"></use>
                 </svg>
               </div>
             </li>
             <li class="modal-item">
               <label class="modal-label" for="">Телефон</label>
               <div class="modal-input-container">
-                <input class="modal-input" type="tel" />
+                <input required class="modal-input" type="tel" />
                 <svg class="modal-icon">
-                  <use href="./img/symbol-defs.svg#icon-tell"></use>
+                  <use href="./img/symbol-defs.svg#icon-telephone"></use>
                 </svg>
               </div>
             </li>
@@ -421,13 +422,13 @@
             </li>
             <li class="modal-item">
               <label class="modal-label" for="">Коментар</label>
-              <input class="modal-input1" placeholder="Введіть текст" type="comment"/>
+              <input required class="modal-input1" placeholder="Введіть текст" type="comment"/>
             </li>
           </ul>
           <div class="modal-agrees">
-            <input class="modal-input-agrees" type="checkbox"/>
-            <label class="modal-label-agrees" for="">Погоджуюся з розсилкою та приймаю</label>
-            <a href="#" class="modal-agrees-link">Умови договору</a>
+            <input id="checkbox" class="modal-input-agrees" type="checkbox"/>
+            <label class="modal-label-agrees" for="checkbox">Погоджуюся з розсилкою та приймаю</label>
+            <a href="@" class="modal-agrees-link">Умови договору</a>
           </div>
           <button class="modal-button" type="submit">Відправити</button>
         </form>

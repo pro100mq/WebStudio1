@@ -97,7 +97,8 @@
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   height: 40px;
-  width: 448px;
+  width: 407px;
+  padding-left: 41px;
 }
 
 .modal-input1 {
@@ -125,7 +126,7 @@
 
 .modal-item:hover .modal-icon,
 .modal-item:hover .modal-input,
-.modal-item:hover .modal-input1 {
+.modal-item:hover .modal-input1  {
   fill: var(--hover-color);
   border-color: var(--hover-color);
 }
