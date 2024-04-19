@@ -21,6 +21,9 @@ body {
 .header {
   padding-top: 24px;
   padding-bottom: 25px;
+  position: fixed;
+  background-color: var(--accent-color);
+  width: 100%;
 }
 
 .header-container {
@@ -70,6 +73,7 @@ body {
   line-height: normal;
   letter-spacing: 0.02em;
   text-decoration: none;
+  position: relative;
 }
 
 .header-link:hover {
@@ -86,6 +90,23 @@ body {
   font-weight: 500;
   line-height: normal;
   letter-spacing: 0.02em;
+}
+
+.header-link::after {
+  display: block;
+  background-color: var(--hover-color);
+  position: absolute;
+  bottom: -32px;
+  right: 0px;
+  opacity: 0;
+  content: "";
+  height: 4px;
+  width: 100%;
+  border-radius: 2px;
+}
+
+.header-item:hover .header-link::after {
+  opacity: 1;
 }
 
 .header-autorisations {
