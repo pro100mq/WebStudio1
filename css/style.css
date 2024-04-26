@@ -74,6 +74,9 @@ body {
   letter-spacing: 0.02em;
   text-decoration: none;
   position: relative;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: color;
+  transition-duration: 250ms;
 }
 
 .header-link:hover {
@@ -103,6 +106,9 @@ body {
   height: 4px;
   width: 100%;
   border-radius: 2px;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-property: var(--hover-color);
 }
 
 .header-item:hover .header-link::after {
@@ -141,6 +147,9 @@ body {
   text-decoration: none;
   display: flex;
   align-items: center;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: color;
+  transition-duration: 250ms;
 }
 
 .header-contacts:hover {
@@ -164,6 +173,9 @@ body {
   height: 12px;
   margin-right: 10px;
   fill: var(--additional-text-color);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: color;
+  transition-duration: 250ms;
 }
 
 .header-icon-phone {
@@ -171,6 +183,9 @@ body {
   height: 16px;
   margin-right: 10px;
   fill: var(--additional-text-color);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: color;
+  transition-duration: 250ms;
 }
 
 .header-autorisations .header-item2:hover .header-icon-mail,
@@ -232,6 +247,9 @@ body {
   cursor: pointer;
   padding: 10px 32px 10px 32px;
   border: none;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: box-shadow, background-color;
+  transition-duration: 250ms;
 }
 
 /* Info Section */
@@ -423,6 +441,9 @@ body {
   width: 44px;
   height: 44px;
   border-radius: 23px;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: var(--hover-color);
+  transition-duration: 250ms;
 }
 
 .team-contacts:hover,
@@ -475,6 +496,9 @@ body {
   flex-shrink: 0;
   border-radius: 4px;
   border: 1px solid #afb1b8;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: var(--hover-color);
+  transition-duration: 250ms;
 }
 
 .customers-contacts:hover,
@@ -495,6 +519,9 @@ body {
   padding: 16px 32px;
   fill: #afb1b8;
   cursor: pointer;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: fill;
+  transition-duration: 250ms;
 }
 
 .customers-icon:hover {
@@ -609,6 +636,9 @@ footer {
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 23px;
   display: block;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: var(--hover-color);
+  transition-duration: 250ms;
 }
 
 .footer-contacts:hover,

@@ -73,6 +73,9 @@ body {
   line-height: normal;
   letter-spacing: 0.02em;
   text-decoration: none;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: color;
+  transition-duration: 250ms;
 }
 
 .header-link:hover {
@@ -102,10 +105,16 @@ body {
   height: 4px;
   width: 100%;
   border-radius: 2px;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-property: var(--hover-color);
 }
 
 .header-item:hover .header-link::after {
   opacity: 1;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: color;
+  transition-duration: 250ms;
 }
 
 .header-autorisations {
@@ -140,6 +149,9 @@ body {
   text-decoration: none;
   display: flex;
   align-items: center;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: var(--hover-color);
+  transition-duration: 250ms;
 }
 
 .header-contacts:hover {
@@ -163,6 +175,9 @@ body {
   height: 12px;
   margin-right: 10px;
   fill: var(--additional-text-color);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: var(--hover-color);
+  transition-duration: 250ms;
 }
 
 .header-icon-phone {
@@ -170,6 +185,9 @@ body {
   height: 16px;
   margin-right: 10px;
   fill: var(--additional-text-color);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: var(--hover-color);
+  transition-duration: 250ms;
 }
 
 .header-autorisations .header-item2:hover .header-icon-mail,
@@ -207,6 +225,9 @@ body {
   padding: 6px 22px;
   outline: none;
   border: none;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: var(--hover-color);
+  transition-duration: 250ms;
 }
 
 .hero-button:hover,
@@ -238,6 +259,12 @@ body {
 .hero-link:focus {
   text-decoration: none;
   outline: none;
+}
+
+.hero-overlay {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: background-color;
+  transition-duration: 250ms;
 }
 
 .hero-poster:hover .hero-overlay,
@@ -420,6 +447,9 @@ footer {
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 23px;
   display: block;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: var(--hover-color);
+  transition-duration: 250ms;
 }
 
 .footer-contacts:hover,
