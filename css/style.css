@@ -247,9 +247,6 @@ body {
   cursor: pointer;
   padding: 10px 32px 10px 32px;
   border: none;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: box-shadow, background-color;
-  transition-duration: 250ms;
 }
 
 /* Info Section */
@@ -442,7 +439,7 @@ body {
   height: 44px;
   border-radius: 23px;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: var(--hover-color);
+  transition-property: background-color;
   transition-duration: 250ms;
 }
 
@@ -497,7 +494,7 @@ body {
   border-radius: 4px;
   border: 1px solid #afb1b8;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: var(--hover-color);
+  transition-property: border;
   transition-duration: 250ms;
 }
 
@@ -637,7 +634,7 @@ footer {
   border-radius: 23px;
   display: block;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: var(--hover-color);
+  transition-property: background-color;
   transition-duration: 250ms;
 }
 
