@@ -72,4 +72,5 @@ a:focus {
 
 input {
     padding: 0;
+    outline: none;
 }

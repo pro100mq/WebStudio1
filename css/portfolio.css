@@ -129,6 +129,9 @@ body {
   font-weight: 500;
   letter-spacing: 0.02em;
   word-wrap: break-word;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-property: color;
 }
 
 .header-item2:hover {
@@ -176,7 +179,7 @@ body {
   margin-right: 10px;
   fill: var(--additional-text-color);
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: color;
+  transition-property: color, fill;
   transition-duration: 250ms;
 }
 
@@ -186,7 +189,7 @@ body {
   margin-right: 10px;
   fill: var(--additional-text-color);
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: color;
+  transition-property: color, fill;
   transition-duration: 250ms;
 }
 
