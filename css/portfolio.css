@@ -266,8 +266,9 @@ body {
 
 .hero-overlay {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: background-color;
+  transition-property: background-color, transform;
   transition-duration: 250ms;
+  transform: scaleY(0);
 }
 
 .hero-poster:hover .hero-overlay,
@@ -276,6 +277,8 @@ body {
   height: 294px;
   background-color: rgba(33, 150, 243, 0.9);
   position: absolute;
+  transform: scaleY(1);
+  transform-origin: bottom;
 }
 
 .hero-poster:hover .hero-overlay-text,
