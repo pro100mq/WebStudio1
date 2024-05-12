@@ -23,6 +23,8 @@ body {
   padding-top: 24px;
   padding-bottom: 25px;
   border: var(--border-linia) 1px solid;
+  animation-name: from-up;
+  animation-duration: 1s;
 }
 
 .header-container {
@@ -218,6 +220,11 @@ body {
   margin-bottom: 50px;
 }
 
+.hero-item {
+  animation-duration: 1s;
+  animation-name: from-up;
+}
+
 .hero-button {
   color: var(--text-color);
   text-align: center;
@@ -306,6 +313,26 @@ body {
   border: 1px solid #eeeeee;
 }
 
+.hero-link:first-child, .hero-link:nth-child(4), .hero-link:nth-child(7) {
+  animation-name: from-left;
+  animation-duration: 1s;
+}
+
+.hero-link:nth-child(2) {
+  animation-name: from-up;
+  animation-duration: 1s;
+}
+
+.hero-link:nth-child(3), .hero-link:nth-child(6), .hero-link:nth-child(9) {
+  animation-name: from-right;
+  animation-duration: 1s;
+}
+
+.hero-link:nth-child(8) {
+  animation-name: from-down;
+  animation-duration: 1s;
+}
+
 .hero-subtext {
   color: #fff;
   font-size: 18px;
@@ -349,6 +376,8 @@ footer {
   background-color: var(--background-color-accent);
   padding-top: 60px;
   padding-bottom: 60px;
+  animation-name: from-down;
+  animation-duration: 1s;
 }
 
 .footer-container {

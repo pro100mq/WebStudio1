@@ -24,6 +24,8 @@ body {
   position: fixed;
   background-color: var(--accent-color);
   width: 100%;
+  animation-name: from-up;
+  animation-duration: 1s;
 }
 
 .header-container {
@@ -220,6 +222,7 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
+
 }
 
 .hero-title {
@@ -232,6 +235,8 @@ body {
   text-transform: uppercase;
   margin-bottom: 30px;
   width: 696px;
+  animation-name: from-left;
+  animation-duration: 1s;
 }
 
 .hero-button {
@@ -250,6 +255,8 @@ body {
   cursor: pointer;
   padding: 10px 32px 10px 32px;
   border: none;
+  animation-duration: from-right;
+  animation-duration: 1s;
 }
 
 /* Info Section */
@@ -303,6 +310,16 @@ body {
   height: 70px;
 }
 
+.info-item:first-child, .info-item:nth-child(2) {
+  animation-name: from-left;
+  animation-duration: 1s;
+}
+
+.info-item:last-child, .info-item:nth-child(3) {
+  animation-name: from-right;
+  animation-duration: 1s;
+}
+
 .info-title {
   color: var(--text-color);
   font-size: 14px;
@@ -352,6 +369,21 @@ body {
 .work-item {
   position: relative;
   z-index: -1;
+}
+
+.work-item:first-child {
+  animation-name: from-left;
+  animation-duration: 1s;
+}
+
+.work-item:nth-child(2) {
+  animation-name: from-up;
+  animation-duration: 1s;
+}
+
+.work-item:last-child {
+  animation-name: from-right;
+  animation-duration: 1s;
 }
 
 .work-text {
@@ -446,6 +478,16 @@ body {
   transition-duration: 250ms;
 }
 
+.team-item:first-child, .team-item:nth-child(2) {
+  animation-name: from-left;
+  animation-duration: 1s;
+}
+
+.team-item:last-child, .team-item:nth-child(3) {
+  animation-name: from-right;
+  animation-duration: 1s;
+}
+
 .team-contacts:hover,
 .team-contacts:focus {
   background-color: var(--hover-color);
@@ -515,6 +557,16 @@ body {
   border: 1px solid var(--hover-color);
 }
 
+.customers-contacts:first-child, .customers-contacts:nth-last-child(4), .customers-contacts:nth-last-child(5) {
+  animation-name: from-left;
+  animation-duration: 1s;
+}
+
+.customers-contacts:last-child, .customers-contacts:nth-last-child(2), .customers-contacts:nth-last-child(3) {
+  animation-name: from-right;
+  animation-duration: 1s;
+}
+
 .customers-icon {
   width: 106px;
   height: 60px;
@@ -535,6 +587,8 @@ footer {
   background-color: var(--background-color-accent);
   padding-top: 60px;
   padding-bottom: 60px;
+  animation-name: from-down;
+  animation-duration: 1s;
 }
 
 .footer-container {
