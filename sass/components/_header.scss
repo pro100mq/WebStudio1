@@ -1,11 +1,11 @@
 .header {
     padding-top: 24px;
     padding-bottom: 25px;
-    background-color: var(--accent-color);
+    background-color: $accent-color;
     width: 100%;
     animation-name: from-up;
     animation-duration: 1s;
-    border: var(--border-linia) 1px solid;
+    border: $border-linia 1px solid;
   }
   
   .header-container {
@@ -24,7 +24,7 @@
   }
   
   .header-logo1 {
-    color: var(--hover-color);
+    color: $hover-color;
     font-size: 26px;
     line-height: normal;
     font-weight: 700;
@@ -33,7 +33,7 @@
   }
   
   .header-logo2 {
-    color: var(--logo-text-color);
+    color: $logo-text-color;
     font-size: 26px;
     line-height: normal;
     font-weight: 700;
@@ -49,7 +49,7 @@
   }
   
   .header-link {
-    color: var(--text-color);
+    color: $text-color;
     font-size: 14px;
     font-weight: 500;
     line-height: normal;
@@ -63,7 +63,7 @@
   }
   
   .header-link:hover {
-    color: var(--hover-color);
+    color: $hover-color;
     font-size: 14px;
     font-weight: 500;
     line-height: normal;
@@ -71,7 +71,7 @@
   }
   
   .header-link:focus {
-    color: var(--hover-color);
+    color: $hover-color;
     font-size: 14px;
     font-weight: 500;
     line-height: normal;
@@ -80,7 +80,7 @@
   
   .header-link::after {
     display: block;
-    background-color: var(--hover-color);
+    background-color: $hover-color;
     position: absolute;
     bottom: -32px;
     right: 0px;
@@ -91,7 +91,7 @@
     border-radius: 2px;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 250ms;
-    transition-property: var(--hover-color);
+    transition-property: $hover-color;
   }
   
   .header-item:hover .header-link::after {
@@ -106,7 +106,7 @@
   .header-item2 {
     display: flex;
     align-items: center;
-    color: var(--additional-text-color);
+    color: $additional-text-color;
     font-weight: 500;
     letter-spacing: 0.02em;
     word-wrap: break-word;
@@ -116,16 +116,16 @@
   }
   
   .header-item2:hover {
-    color: var(--hover-color);
+    color: $hover-color;
     cursor: pointer;
   }
   
   .header-item2:focus {
-    color: var(--hover-color);
+    color: $hover-color;
   }
   
   .header-contacts {
-    color: var(--additional-text-color);
+    color: $additional-text-color;
     font-size: 14px;
     font-weight: 500;
     line-height: normal;
@@ -140,7 +140,7 @@
   }
   
   .header-contacts:hover {
-    color: var(--hover-color);
+    color: $hover-color;
     font-size: 14px;
     font-weight: 500;
     line-height: normal;
@@ -148,7 +148,7 @@
   }
   
   .header-contacts:focus {
-    color: var(--hover-color);
+    color: $hover-color;
     font-size: 14px;
     font-weight: 500;
     line-height: normal;
@@ -159,7 +159,7 @@
     width: 16px;
     height: 12px;
     margin-right: 10px;
-    fill: var(--additional-text-color);
+    fill: $additional-text-color;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-property: color, fill;
     transition-duration: 250ms;
@@ -169,7 +169,7 @@
     width: 10px;
     height: 16px;
     margin-right: 10px;
-    fill: var(--additional-text-color);
+    fill: $additional-text-color;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-property: color, fill;
     transition-duration: 250ms;
@@ -181,8 +181,8 @@
   .header-contacts:focus .header-icon-mail,
   .header-contacts:focus .header-icon-phone,
   .header-contacts:focus {
-    fill: #2196f3;
-    color: #2196f3;
+    fill: $hover-color;
+    color: $hover-color;
     cursor: pointer;
   }
   

@@ -4,7 +4,7 @@
 }
 
 .customers-title {
-  color: var(--text-color);
+  color: $text-color;
   text-align: center;
   font-family: Roboto;
   font-size: 36px;
@@ -33,13 +33,13 @@
 
 .customers-contacts:hover,
 .customers-contacts:focus {
-  border: var(--hover-color) 1px solid;
+  border: $hover-color 1px solid;
 }
 
 .customers-contacts:hover .customers-icon,
 .customers-contacts:focus .customers-icon {
-  fill: var(--hover-color);
-  border: 1px solid var(--hover-color);
+  fill: $hover-color;
+  border: 1px solid $hover-color;
 }
 
 .customers-contacts:first-child,
@@ -69,5 +69,5 @@
 }
 
 .customers-icon:hover {
-  fill: var(--hover-color);
+  fill: $hover-color;
 }

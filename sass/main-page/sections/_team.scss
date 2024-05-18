@@ -1,7 +1,7 @@
 .team-section {
     padding-top: 94px;
     padding-bottom: 94px;
-    background-color: var(--background-color-ourteam);
+    background-color: $background-color-ourteam;
   }
   
   .team-container {
@@ -12,7 +12,7 @@
   }
   
   .team-title {
-    color: var(--text-color);
+    color: $text-color;
     text-align: center;
     font-size: 36px;
     font-weight: 700;
@@ -28,7 +28,7 @@
   }
   
   .team-item {
-    background-color: var(--accent-color);
+    background-color: $accent-color;
     box-shadow: 0px 2px 1px 0px #00000033, 0px 1px 1px 0px #00000024,
       0px 1px 3px 0px #0000001f;
   }
@@ -38,7 +38,7 @@
   }
   
   .team-name {
-    color: var(--text-color);
+    color: $text-color;
     text-align: center;
     font-size: 16px;
     font-weight: 500;
@@ -49,7 +49,7 @@
   }
   
   .team-job {
-    color: var(--additional-text-color);
+    color: $additional-text-color;
     text-align: center;
     font-size: 16px;
     font-weight: 400;
@@ -88,12 +88,12 @@
   
   .team-contacts:hover,
   .team-contacts:focus {
-    background-color: var(--hover-color);
+    background-color: $hover-color;
   }
   
   .team-contacts:hover .team-icon,
   .team-contacts:focus .team-icon {
-    fill: var(--accent-color);
+    fill: $accent-color;
   }
   
   .team-icon {
@@ -108,5 +108,5 @@
   }
   
   .team-icon:hover {
-    fill: var(--accent-color);
+    fill: $accent-color;
   }
