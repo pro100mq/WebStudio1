@@ -1,0 +1,168 @@
+.hero-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  
+  .hero-list {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 50px;
+  }
+  
+  .hero-item {
+    animation-duration: 1s;
+    animation-name: from-up;
+  }
+  
+  .hero-button {
+    color: var(--text-color);
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.6;
+    border-radius: 4px;
+    background: var(--background-color-ourteam);
+    padding: 6px 22px;
+    outline: none;
+    border: none;
+    font-family: Roboto;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: background-color, box-shadow;
+    transition-duration: 250ms;
+  }
+  
+  .hero-button:hover,
+  .hero-button:focus {
+    color: var(--accent-color);
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.6;
+    border-radius: 4px;
+    background-color: var(--hover-color);
+    box-shadow: 0px 2px 2px 0px #0000001f, 0px 1px 2px 0px #00000014,
+      0px 3px 1px 0px #0000001a;
+  }
+  
+  .hero-posters {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 30px;
+  }
+  
+  .hero-link {
+    text-decoration: none;
+    display: block;
+    position: relative;
+  }
+  
+  .hero-link:focus {
+    text-decoration: none;
+    outline: none;
+  }
+  
+  .hero-overlay {
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: background-color, transform;
+    transition-duration: 250ms;
+    transform: scaleY(0);
+  }
+  
+  .hero-poster:hover .hero-overlay,
+  .hero-poster:focus .hero-overlay {
+    width: 370px;
+    height: 294px;
+    background-color: rgba(33, 150, 243, 0.9);
+    position: absolute;
+    transform: scaleY(1);
+    transform-origin: bottom;
+  }
+  
+  .hero-poster:hover .hero-overlay-text,
+  .hero-poster:focus .hero-overlay-text {
+    color: var(--accent-color);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.54px;
+    position: absolute;
+    opacity: 1;
+    font-family: Roboto;
+  }
+  
+  .hero-overlay-text {
+    position: absolute;
+    top: 63px;
+    left: 23px;
+    opacity: 0;
+  }
+  
+  .hero-poster {
+    flex-basis: calc((100% - 2 * 30px) / 3) ;
+    background-color: var(--accent-color);
+    border: 1px solid #eeeeee;
+  }
+  
+  .hero-link:first-child, .hero-link:nth-child(4), .hero-link:nth-child(7) {
+    animation-name: from-left;
+    animation-duration: 1s;
+  }
+  
+  .hero-link:nth-child(2) {
+    animation-name: from-up;
+    animation-duration: 1s;
+  }
+  
+  .hero-link:nth-child(3), .hero-link:nth-child(6), .hero-link:nth-child(9) {
+    animation-name: from-right;
+    animation-duration: 1s;
+  }
+  
+  .hero-link:nth-child(8) {
+    animation-name: from-down;
+    animation-duration: 1s;
+  }
+  
+  .hero-subtext {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.54px;
+  }
+  
+  .hero-poster:hover,
+  .hero-link:focus {
+    box-shadow: 1px 4px 6px 0px #00000029, 0px 4px 4px 0px #0000000f,
+      0px 1px 1px 0px #0000001f;
+    cursor: pointer;
+  }
+  
+  .hero-title {
+    color: var(--text-color);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    margin-top: 20px;
+    margin-bottom: 4px;
+    padding-left: 24px;
+    padding-right: 24px;
+    font-family: Roboto;
+  }
+  
+  .hero-text {
+    color: var(--additional-text-color);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.8;
+    letter-spacing: 0.04em;
+    padding-bottom: 20px;
+    padding-left: 24px;
+    padding-right: 24px;
+    font-family: Roboto;
+  }

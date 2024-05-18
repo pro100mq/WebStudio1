@@ -17,10 +17,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/modal.css">
-    <link rel="stylesheet" href="./css/animations-libraly.css">
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
 
   <body>
@@ -66,7 +63,9 @@
       <section class="hero-section">
         <div class="container hero-container">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button data-modal-open class="hero-button" type="button">Замовити послугу</button>
+          <button data-modal-open class="hero-button" type="button">
+            Замовити послугу
+          </button>
         </div>
       </section>
 
@@ -368,7 +367,7 @@
           <h1 class="basement-form-title">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</h1>
           <div class="basement-form-container">
             <input
-              required            
+              required
               type="text"
               name=""
               class="basement-form-input"
@@ -423,12 +422,19 @@
             </li>
             <li class="modal-item">
               <label class="modal-label" for="">Коментар</label>
-              <input required class="modal-input1" placeholder="Введіть текст" type="comment"/>
+              <input
+                required
+                class="modal-input1"
+                placeholder="Введіть текст"
+                type="comment"
+              />
             </li>
           </ul>
           <div class="modal-agrees">
-            <input id="checkbox" class="modal-input-agrees" type="checkbox"/>
-            <label class="modal-label-agrees" for="checkbox">Погоджуюся з розсилкою та приймаю</label>
+            <input id="checkbox" class="modal-input-agrees" type="checkbox" />
+            <label class="modal-label-agrees" for="checkbox"
+              >Погоджуюся з розсилкою та приймаю</label
+            >
             <a href="@" class="modal-agrees-link">Умови договору</a>
           </div>
           <button class="modal-button" type="submit">Відправити</button>
