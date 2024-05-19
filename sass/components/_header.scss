@@ -1,54 +1,57 @@
 .header {
-    padding-top: 24px;
-    padding-bottom: 25px;
-    background-color: $accent-color;
-    width: 100%;
-    animation-name: from-up;
-    animation-duration: 1s;
-    border: $border-linia 1px solid;
-  }
-  
-  .header-container {
+  padding-top: 24px;
+  padding-bottom: 25px;
+  background-color: $accent-color;
+  width: 100%;
+  animation-name: from-up;
+  animation-duration: 1s;
+  border: $border-linia 1px solid;
+
+  &__container {
     display: flex;
     align-items: center;
   }
-  
-  .header-logo {
+
+  &__logo {
     display: block;
     text-decoration: none;
+
+    &:focus {
+      display: block;
+      text-decoration: none;
+    }
   }
-  
-  .header-logo:focus {
-    display: block;
-    text-decoration: none;
-  }
-  
-  .header-logo1 {
+
+  &__logo1 {
     color: $hover-color;
+    font-family: Raleway;
     font-size: 26px;
     line-height: normal;
     font-weight: 700;
     letter-spacing: 0.03em;
-    font-family: Raleway;
   }
-  
-  .header-logo2 {
+
+  &__logo2 {
     color: $logo-text-color;
+    font-family: Raleway;
     font-size: 26px;
     line-height: normal;
     font-weight: 700;
     letter-spacing: 0.03em;
-    font-family: Raleway;
   }
-  
-  .header-list {
+
+  &__list {
     display: flex;
     gap: 50px;
     margin-right: 344px;
     margin-left: auto;
   }
-  
-  .header-link {
+
+  &__item:hover &__link::after {
+    opacity: 1;
+  }
+
+  &__link {
     color: $text-color;
     font-size: 14px;
     font-weight: 500;
@@ -60,50 +63,46 @@
     transition-property: color;
     transition-duration: 250ms;
     font-family: Roboto;
+
+    &:hover {
+      color: $hover-color;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: normal;
+      letter-spacing: 0.02em;
+    }
+
+    &:focus {
+      color: $hover-color;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: normal;
+      letter-spacing: 0.02em;
+    }
+
+    &::after {
+      display: block;
+      background-color: $hover-color;
+      position: absolute;
+      bottom: -32px;
+      right: 0px;
+      opacity: 0;
+      content: "";
+      height: 4px;
+      width: 100%;
+      border-radius: 2px;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-duration: 250ms;
+      transition-property: $hover-color;
+    }
   }
-  
-  .header-link:hover {
-    color: $hover-color;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: 0.02em;
-  }
-  
-  .header-link:focus {
-    color: $hover-color;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: 0.02em;
-  }
-  
-  .header-link::after {
-    display: block;
-    background-color: $hover-color;
-    position: absolute;
-    bottom: -32px;
-    right: 0px;
-    opacity: 0;
-    content: "";
-    height: 4px;
-    width: 100%;
-    border-radius: 2px;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 250ms;
-    transition-property: $hover-color;
-  }
-  
-  .header-item:hover .header-link::after {
-    opacity: 1;
-  }
-  
-  .header-autorisations {
+
+  &__autorisations {
     display: flex;
     gap: 50px;
   }
-  
-  .header-item2 {
+
+  &__item2 {
     display: flex;
     align-items: center;
     color: $additional-text-color;
@@ -113,18 +112,18 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 250ms;
     transition-property: color;
+
+    &:hover {
+      color: $hover-color;
+      cursor: pointer;
+    }
+
+    &:focus {
+      color: $hover-color;
+    }
   }
-  
-  .header-item2:hover {
-    color: $hover-color;
-    cursor: pointer;
-  }
-  
-  .header-item2:focus {
-    color: $hover-color;
-  }
-  
-  .header-contacts {
+
+  &__contacts {
     color: $additional-text-color;
     font-size: 14px;
     font-weight: 500;
@@ -137,25 +136,25 @@
     transition-property: color;
     transition-duration: 250ms;
     font-family: Roboto;
+
+    &:hover {
+      color: $hover-color;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: normal;
+      letter-spacing: 0.02em;
+    }
+
+    &:focus {
+      color: $hover-color;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: normal;
+      letter-spacing: 0.02em;
+    }
   }
-  
-  .header-contacts:hover {
-    color: $hover-color;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: 0.02em;
-  }
-  
-  .header-contacts:focus {
-    color: $hover-color;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: 0.02em;
-  }
-  
-  .header-icon-mail {
+
+  &__mail {
     width: 16px;
     height: 12px;
     margin-right: 10px;
@@ -164,8 +163,8 @@
     transition-property: color, fill;
     transition-duration: 250ms;
   }
-  
-  .header-icon-phone {
+
+  &__phone {
     width: 10px;
     height: 16px;
     margin-right: 10px;
@@ -174,15 +173,15 @@
     transition-property: color, fill;
     transition-duration: 250ms;
   }
-  
-  .header-autorisations .header-item2:hover .header-icon-mail,
-  .header-autorisations .header-item2:hover .header-icon-phone,
-  .header-autorisations .header-item2:hover .header-contacts,
-  .header-contacts:focus .header-icon-mail,
-  .header-contacts:focus .header-icon-phone,
-  .header-contacts:focus {
+
+  &__autorisations &__item2:hover &__mail,
+  &__autorisations &__item2:hover &__phone,
+  &__autorisations &__item2:hover &__contacts,
+  &__contacts:focus &__mail,
+  &__contacts:focus &__phone,
+  &__contacts:focus {
     fill: $hover-color;
     color: $hover-color;
     cursor: pointer;
   }
-  
+}

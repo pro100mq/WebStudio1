@@ -1,17 +1,16 @@
-.team-section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-    background-color: $background-color-ourteam;
-  }
-  
-  .team-container {
+.team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: $background-color-ourteam;
+
+  &__container {
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
   }
-  
-  .team-title {
+
+  &__title {
     color: $text-color;
     text-align: center;
     font-size: 36px;
@@ -21,23 +20,35 @@
     margin-bottom: 50px;
     font-family: Roboto;
   }
-  
-  .team-list {
+
+  &__list {
     display: flex;
     gap: 30px;
   }
-  
-  .team-item {
+
+  &__item {
     background-color: $accent-color;
     box-shadow: 0px 2px 1px 0px #00000033, 0px 1px 1px 0px #00000024,
       0px 1px 3px 0px #0000001f;
+
+    &:first-child,
+    &:nth-child(2) {
+      animation-name: from-left;
+      animation-duration: 1s;
+    }
+
+    &:last-child,
+    &:nth-child(3) {
+      animation-name: from-right;
+      animation-duration: 1s;
+    }
   }
-  
-  .team-photo {
+
+  &__photo {
     margin-bottom: 30px;
   }
-  
-  .team-name {
+
+  &__name {
     color: $text-color;
     text-align: center;
     font-size: 16px;
@@ -47,8 +58,8 @@
     margin-bottom: 10px;
     font-family: Roboto;
   }
-  
-  .team-job {
+
+  &__job {
     color: $additional-text-color;
     text-align: center;
     font-size: 16px;
@@ -58,15 +69,15 @@
     margin-bottom: 16px;
     font-family: Roboto;
   }
-  
-  .team-icons {
+
+  &__icons {
     display: flex;
     column-gap: 10px;
     padding: 0px 32px;
     padding-bottom: 30px;
   }
-  
-  .team-contacts {
+
+  &__contacts {
     display: flex;
     width: 44px;
     height: 44px;
@@ -74,29 +85,19 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-property: background-color, fill;
     transition-duration: 250ms;
+
+    &:hover,
+    &:focus {
+      background-color: $hover-color;
+    }
+
+    &:hover &__icon,
+    &:focus &__icon {
+      fill: $accent-color;
+    }
   }
-  
-  .team-item:first-child, .team-item:nth-child(2) {
-    animation-name: from-left;
-    animation-duration: 1s;
-  }
-  
-  .team-item:last-child, .team-item:nth-child(3) {
-    animation-name: from-right;
-    animation-duration: 1s;
-  }
-  
-  .team-contacts:hover,
-  .team-contacts:focus {
-    background-color: $hover-color;
-  }
-  
-  .team-contacts:hover .team-icon,
-  .team-contacts:focus .team-icon {
-    fill: $accent-color;
-  }
-  
-  .team-icon {
+
+  &__icon {
     width: 20px;
     height: 20px;
     fill: #afb1b8;
@@ -105,8 +106,13 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-property: fill;
     transition-duration: 250ms;
+
+    &:hover {
+      fill: $accent-color;
+    }
   }
-  
-  .team-icon:hover {
-    fill: $accent-color;
-  }
+}
+
+
+
+

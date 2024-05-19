@@ -1,15 +1,14 @@
-.work-section {
-    padding-bottom: 94px;
-    padding-top: 94px;
-  }
-  
-  .work-container {
+.work {
+  padding-bottom: 94px;
+  padding-top: 94px;
+
+  &__container {
     display: flex;
     align-items: center;
     flex-direction: column;
   }
-  
-  .work-title {
+
+  &__title {
     color: $text-color;
     font-family: Roboto;
     text-align: center;
@@ -19,43 +18,54 @@
     letter-spacing: 0.05em;
     margin-bottom: 50px;
   }
-  
-  .work-list {
+
+  &__list {
     display: flex;
     gap: 30px;
   }
-  
-  .work-item {
+
+  &__item {
     position: relative;
     z-index: -1;
+
+    &:first-child {
+      animation-name: from-left;
+      animation-duration: 1s;
+    }
+    
+    &:nth-child(2) {
+      animation-name: from-up;
+      animation-duration: 1s;
+    }
+    
+    &:last-child {
+      animation-name: from-right;
+      animation-duration: 1s;
+    }
   }
-  
-  .work-item:first-child {
-    animation-name: from-left;
-    animation-duration: 1s;
-  }
-  
-  .work-item:nth-child(2) {
-    animation-name: from-up;
-    animation-duration: 1s;
-  }
-  
-  .work-item:last-child {
-    animation-name: from-right;
-    animation-duration: 1s;
-  }
-  
-  .work-text {
+
+  &__text {
     color: $accent-color;
     text-align: center;
     font-size: 14px;
     font-weight: 700;
     line-height: 16.41px;
     letter-spacing: 0.03px;
-    width: 370px; 
+    width: 370px;
     padding: 27px 0px;
-    background-color: rgba(47, 48, 58, 0.80);
+    background-color: rgba(47, 48, 58, 0.8);
     position: absolute;
     top: 225px;
     font-family: Roboto;
   }
+}
+
+
+
+
+
+
+
+
+
+

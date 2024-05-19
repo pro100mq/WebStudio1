@@ -1,63 +1,67 @@
-.info-section {
-    padding-top: 94px;
-  }
-  
-  .information-container {
+.info {
+  padding-top: 94px;
+
+  &__container {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
-  
-  .info-list {
+
+  &__list {
     display: flex;
     gap: 30px;
   }
-  
-  .info-item::before {
-    display: block;
-    border-radius: 4px;
-    background: $background-color-ourteam;
-    padding: 25px 100px 25px 100px;
-    width: 270px;
-    height: 120px;
-    margin-bottom: 30px;
+
+  &__item {
+
+    &::before {
+      display: block;
+      border-radius: 4px;
+      background: $background-color-ourteam;
+      padding: 25px 100px 25px 100px;
+      width: 270px;
+      height: 120px;
+      margin-bottom: 30px;
+    }
+
+    &:first-child::before {
+      content: url(../img/antenna.svg);
+      width: 70px;
+      height: 70px;
+    }
+
+    &:nth-child(2)::before {
+      content: url(../img/clock.svg);
+      width: 70px;
+      height: 70px;
+    }
+
+    &:nth-child(3)::before {
+      content: url(../img/diagram.svg);
+      width: 70px;
+      height: 70px;
+    }
+
+    &:last-child::before {
+      content: url(../img/astronaut.svg);
+      width: 70px;
+      height: 70px;
+    }
+
+    &:first-child,
+    &:nth-child(2) {
+      animation-name: from-left;
+      animation-duration: 1s;
+    }
+
+    &:last-child,
+    &:nth-child(3) {
+      animation-name: from-right;
+      animation-duration: 1s;
+    }
   }
-  
-  .info-item:first-child::before {
-    content: url(../img/antenna.svg);
-    width: 70px;
-    height: 70px;
-  }
-  
-  .info-item:nth-child(2)::before {
-    content: url(../img/clock.svg);
-    width: 70px;
-    height: 70px;
-  }
-  
-  .info-item:nth-child(3)::before {
-    content: url(../img/diagram.svg);
-    width: 70px;
-    height: 70px;
-  }
-  
-  .info-item:last-child::before {
-    content: url(../img/astronaut.svg);
-    width: 70px;
-    height: 70px;
-  }
-  
-  .info-item:first-child, .info-item:nth-child(2) {
-    animation-name: from-left;
-    animation-duration: 1s;
-  }
-  
-  .info-item:last-child, .info-item:nth-child(3) {
-    animation-name: from-right;
-    animation-duration: 1s;
-  }
-  
-  .info-title {
+
+  &__title {
     color: $text-color;
     font-family: Roboto;
     font-size: 14px;
@@ -67,8 +71,8 @@
     text-transform: uppercase;
     margin-bottom: 10px;
   }
-  
-  .info-text {
+
+  &__text {
     color: $additional-text-color;
     font-size: 14px;
     font-weight: 400;
@@ -76,3 +80,8 @@
     letter-spacing: 0.03em;
     font-family: Roboto;
   }
+}
+
+
+
+

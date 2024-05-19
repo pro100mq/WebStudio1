@@ -1,32 +1,31 @@
-footer {
-    background-color: $background-color-accent;
-    padding-top: 60px;
-    padding-bottom: 60px;
-    animation-name: from-down;
-    animation-duration: 1s;
-  }
-  
-  .footer-container {
+.footer {
+  background-color: $background-color-accent;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  animation-name: from-down;
+  animation-duration: 1s;
+
+  &__container {
     flex-direction: row;
     justify-content: start;
     align-content: normal;
     row-gap: 20px;
     display: flex;
   }
-  
-  .footer-logo {
+
+  &__logo {
     display: block;
     margin-bottom: 20px;
     text-decoration: none;
+
+    &:focus {
+      display: block;
+      margin-bottom: 20px;
+      text-decoration: none;
+    }
   }
-  
-  .footer-logo:focus {
-    display: block;
-    margin-bottom: 20px;
-    text-decoration: none;
-  }
-  
-  .footer-logo1 {
+
+  &__logo1 {
     color: $hover-color;
     font-size: 26px;
     font-family: Raleway;
@@ -35,10 +34,9 @@ footer {
     letter-spacing: 0.03em;
     margin-bottom: 20px;
     word-wrap: break-word;
-    font-family: Raleway;
   }
-  
-  .footer-logo2 {
+
+  &__logo2 {
     color: $accent-color;
     font-size: 26px;
     font-family: Raleway;
@@ -46,10 +44,9 @@ footer {
     font-weight: 700;
     letter-spacing: 0.03em;
     margin-bottom: 20px;
-    font-family: Raleway;
   }
-  
-  .footer-address {
+
+  &__address {
     color: $accent-color;
     font-size: 14px;
     font-weight: 400;
@@ -61,8 +58,8 @@ footer {
     display: block;
     font-family: Roboto;
   }
-  
-  .footer-email {
+
+  &__email {
     color: $additional-text-color;
     font-size: 14px;
     font-weight: 400;
@@ -74,8 +71,8 @@ footer {
     color: rgba(255, 255, 255, 0.6);
     font-family: Roboto;
   }
-  
-  .footer-phone {
+
+  &__phone {
     color: $additional-text-color;
     font-size: 14px;
     font-weight: 400;
@@ -85,12 +82,12 @@ footer {
     color: rgba(255, 255, 255, 0.6);
     font-family: Roboto;
   }
-  
-  .footer-icons {
+
+  &__icons {
     margin-left: 70px;
   }
-  
-  .footer-icon-subtitle {
+
+  &__subtitle {
     color: $accent-color;
     font-size: 14px;
     font-style: normal;
@@ -101,13 +98,13 @@ footer {
     margin-bottom: 20px;
     font-family: Roboto;
   }
-  
-  .footer-icon-list {
+
+  &__least {
     display: flex;
     column-gap: 10px;
   }
-  
-  .footer-contacts {
+
+  &__contacts {
     width: 44px;
     height: 44px;
     flex-shrink: 0;
@@ -117,31 +114,29 @@ footer {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-property: background-color;
     transition-duration: 250ms;
+
+    &:hover,
+    &:focus {
+      background-color: $hover-color;
+    }
   }
-  
-  .footer-contacts:hover,
-  .footer-contacts:focus {
-    background-color: $hover-color;
-  }
-  
-  .footer-icon {
+
+  &__icon {
     width: 20px;
     height: 20px;
     fill: $accent-color;
     cursor: pointer;
     padding: 12px;
   }
-  
-  .basement-form {
+}
+
+.basement {
+  &__form {
     margin-left: 93px;
     width: 570px;
   }
-  
-  .basement-form-container {
-    display: flex;
-  }
-  
-  .basement-form-title {
+
+  &__title {
     color: $accent-color;
     font-size: 14px;
     font-style: normal;
@@ -152,8 +147,12 @@ footer {
     margin-bottom: 20px;
     font-family: Roboto;
   }
-  
-  .basement-form-input {
+
+  &__container {
+    display: flex;
+  }
+
+  &__input {
     width: 358px;
     height: 50px;
     flex-shrink: 0;
@@ -164,19 +163,19 @@ footer {
     margin-right: 12px;
     padding-left: 16px;
     color: #fff;
+
+    &::placeholder {
+      color: rgba(255, 255, 255, 0.6);
+      font-family: Roboto;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 20px;
+      letter-spacing: 0.48px;
+    }
   }
-  
-  .basement-form-input::placeholder {
-    color: rgba(255, 255, 255, 0.6);
-    font-family: Roboto;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 20px;
-    letter-spacing: 0.48px;
-  }
-  
-  .basement-form-button {
+
+  &__button {
     width: 200px;
     height: 50px;
     flex-shrink: 0;
@@ -196,8 +195,8 @@ footer {
     justify-content: center;
     align-items: center;
   }
-  
-  .basement-form-icon {
+
+  &__icon {
     width: 24px;
     height: 24px;
     margin-left: 10px;
@@ -205,4 +204,4 @@ footer {
     padding-bottom: 3px;
     fill: $accent-color;
   }
-  
+}

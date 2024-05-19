@@ -1,41 +1,40 @@
 .backdrop {
-    background-color: rgba(128, 128, 128, 0.5);
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    backdrop-filter: blur(3px);
-  }
-  
-  .is-hidden {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-  }
-  
-  .no-scroll {
-    overflow: hidden;
-  }
-  
-  .modal {
-    width: 455px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 4px;
-    background-color: $accent-color;
-    padding: 40px;
-  }
-  
-  .modal-form {
+  background-color: rgba(128, 128, 128, 0.5);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  backdrop-filter: blur(3px);
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.modal {
+  width: 455px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 4px;
+  background-color: $accent-color;
+  padding: 40px;
+
+  &__form {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  
-  .modal-close-button {
+
+  &__btnclose {
     position: absolute;
     top: 8px;
     right: 8px;
@@ -52,22 +51,22 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 250ms;
     transition-property: fill;
+
+    &:hover {
+      fill: $hover-color;
+    }
   }
-  
-  .modal-close-button:hover {
-    fill: $hover-color;
-  }
-  
-  .modal-close-icon {
+
+  &__close {
     width: 18px;
     height: 18px;
+
+    &:hover {
+      fill: $hover-color;
+    }
   }
-  
-  .modal-close-icon:hover {
-    fill: $hover-color;
-  }
-  
-  .modal-title {
+
+  &__title {
     color: $text-color;
     text-align: center;
     font-size: 20px;
@@ -76,31 +75,40 @@
     line-height: 23.44px;
     letter-spacing: 0.03em;
     margin-bottom: 12px;
+    font-family: Roboto;
   }
-  
-  .modal-list {
+
+  &__list {
     display: flex;
     flex-direction: column;
     gap: 10px;
     align-items: center;
   }
-  
-  .modal-item {
+
+  &__item {
     display: flex;
     flex-direction: column;
     position: relative;
   }
-  
-  .modal-label {
+
+  &__item:hover &__icon,
+  &__item:hover &__input,
+  &__item:hover &__input1 {
+    fill: $hover-color;
+    border-color: $hover-color;
+  }
+
+  &__label {
     color: $additional-text-color;
     font-size: 12px;
     font-weight: 400;
     line-height: normal;
     letter-spacing: 1%;
     margin-bottom: 4px;
+    font-family: Roboto;
   }
-  
-  .modal-input {
+
+  &__input {
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     height: 40px;
@@ -109,14 +117,30 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 250ms;
     transition-property: fill, border-color;
+
+    &:hover {
+      fill: $hover-color;
+      border-color: $hover-color;
+    }
   }
-  
-  .modal-input:hover {
-    fill: $hover-color;
-    border-color: $hover-color;
+
+  &__icon {
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: 30px;
+    left: 15px;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+    transition-property: fill, border-color;
+
+    &:hover {
+      fill: $hover-color;
+      border-color: $hover-color;
+    }
   }
-  
-  .modal-input1 {
+
+  &__input1 {
     box-sizing: border-box;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
@@ -132,50 +156,23 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 250ms;
     transition-property: fill, border-color;
+    font-family: Roboto;
   }
-  
-  .modal-input:hover {
-    fill: $hover-color;
-    border-color: $hover-color;
-  }
-  
-  .modal-icon {
-    width: 18px;
-    height: 18px;
-    position: absolute;
-    top: 30px;
-    left: 15px;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 250ms;
-    transition-property: fill, border-color;
-  }
-  
-  .modal-icon:hover{
-    fill: $hover-color;
-    border-color: $hover-color;
-  }
-  
-  .modal-item:hover .modal-icon,
-  .modal-item:hover .modal-input,
-  .modal-item:hover .modal-input1  {
-    fill: $hover-color;
-    border-color: $hover-color;
-  }
-  
-  .modal-agrees {
+
+  &__agrees {
     margin-top: 20px;
     margin-bottom: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  
-  .modal-input-agrees {
+
+  &__agrinput {
     width: 16px;
     height: 15px;
   }
-  
-  .modal-label-agrees {
+
+  &__agrlabel {
     color: $additional-text-color;
     font-size: 14px;
     font-style: normal;
@@ -184,9 +181,10 @@
     letter-spacing: 0.42px;
     margin-left: 7px;
     margin-right: 5px;
+    font-family: Roboto;
   }
-  
-  .modal-agrees-link {
+
+  &__agrlink {
     color: $hover-color;
     font-size: 14px;
     font-style: normal;
@@ -194,9 +192,10 @@
     line-height: 24px;
     letter-spacing: 0.42px;
     text-decoration-line: underline;
+    font-family: Roboto;
   }
-  
-  .modal-button {
+
+  &__button {
     width: 200px;
     height: 50px;
     border-radius: 4px;
@@ -209,5 +208,6 @@
     font-weight: 700;
     line-height: 30px;
     letter-spacing: 0.96px;
+    font-family: Roboto;
   }
-  
+}
