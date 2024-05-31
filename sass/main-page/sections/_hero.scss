@@ -10,9 +10,8 @@
   padding-top: 200px;
 
   &__container {
-    display: flex;
-    align-items: center;
     flex-direction: column;
+    @include flexbox($center-y: center);
   }
 
   &__title {

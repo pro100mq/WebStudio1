@@ -7,10 +7,9 @@
 
   &__container {
     flex-direction: row;
-    justify-content: start;
     align-content: normal;
     row-gap: 20px;
-    display: flex;
+    @include flexbox($position-x: start)
   }
 
   &__logo {
@@ -29,9 +28,7 @@
     color: $hover-color;
     font-size: 26px;
     font-family: Raleway;
-    line-height: normal;
-    font-weight: 700;
-    letter-spacing: 0.03em;
+    @extend %title-styles;
     margin-bottom: 20px;
     word-wrap: break-word;
   }
@@ -40,9 +37,7 @@
     color: $accent-color;
     font-size: 26px;
     font-family: Raleway;
-    line-height: normal;
-    font-weight: 700;
-    letter-spacing: 0.03em;
+    @extend %title-styles;
     margin-bottom: 20px;
   }
 
@@ -100,8 +95,7 @@
   }
 
   &__least {
-    display: flex;
-    column-gap: 10px;
+    @include flexbox($gap: 10px);
   }
 
   &__contacts {
@@ -140,16 +134,14 @@
     color: $accent-color;
     font-size: 14px;
     font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 0.42px;
+    @extend %title-styles;
     text-transform: uppercase;
     margin-bottom: 20px;
     font-family: Roboto;
   }
 
   &__container {
-    display: flex;
+    @include flexbox()
   }
 
   &__input {
@@ -191,9 +183,7 @@
     line-height: 30px;
     letter-spacing: 0.96px;
     padding: 10px 28px 10px 28px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flexbox($position-x: center, $center-y: center)
   }
 
   &__icon {

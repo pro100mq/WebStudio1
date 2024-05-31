@@ -3,9 +3,8 @@
   padding-top: 94px;
 
   &__container {
-    display: flex;
-    align-items: center;
     flex-direction: column;
+    @include flexbox($center-y: center);
   }
 
   &__title {
@@ -13,15 +12,12 @@
     font-family: Roboto;
     text-align: center;
     font-size: 36px;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 0.05em;
+    @extend %title-styles;
     margin-bottom: 50px;
   }
 
   &__list {
-    display: flex;
-    gap: 30px;
+    @include flexbox($gap: 30px);
   }
 
   &__item {

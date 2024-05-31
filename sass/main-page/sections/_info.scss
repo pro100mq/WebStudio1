@@ -2,14 +2,11 @@
   padding-top: 94px;
 
   &__container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    @include flexbox($center-y: center, $position-x: space-between);
   }
 
   &__list {
-    display: flex;
-    gap: 30px;
+    @include flexbox($gap: 30px);
   }
 
   &__item {
@@ -65,9 +62,7 @@
     color: $text-color;
     font-family: Roboto;
     font-size: 14px;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 0.02em;
+    @extend %title-styles;
     text-transform: uppercase;
     margin-bottom: 10px;
   }

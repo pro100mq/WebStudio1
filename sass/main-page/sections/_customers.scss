@@ -15,7 +15,7 @@
   }
 
   &__icons {
-    display: flex;
+    @include flexbox();
     column-gap: 30px;
   }
 

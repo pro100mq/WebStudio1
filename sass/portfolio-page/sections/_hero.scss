@@ -3,10 +3,8 @@
   padding-bottom: 94px;
 
   &__list {
-    display: flex;
-    justify-content: center;
-    gap: 8px;
     margin-bottom: 50px;
+    @include flexbox($gap: 8px, $position-x: center,);
   }
 
   &__item {
@@ -43,8 +41,7 @@
   }
 
   &__posters {
-    display: flex;
-    align-items: center;
+    @include flexbox($center-y: center);
     flex-wrap: wrap;
     column-gap: 30px;
     row-gap: 30px;
@@ -145,14 +142,13 @@
   &__title {
     color: $text-color;
     font-size: 18px;
-    font-weight: 700;
     line-height: 2;
-    letter-spacing: 0.06em;
     margin-top: 20px;
     margin-bottom: 4px;
     padding-left: 24px;
     padding-right: 24px;
     font-family: Roboto;
+    @extend %title-styles;
   }
 
   &__work {

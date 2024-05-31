@@ -4,26 +4,21 @@
   background-color: $background-color-ourteam;
 
   &__container {
-    display: flex;
-    align-items: center;
+    @include flexbox($center-y: center, $position-x: center);
     flex-direction: column;
-    justify-content: center;
   }
 
   &__title {
     color: $text-color;
     text-align: center;
     font-size: 36px;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 0.05em;
+    @extend %title-styles;
     margin-bottom: 50px;
     font-family: Roboto;
   }
 
   &__list {
-    display: flex;
-    gap: 30px;
+    @include flexbox($gap: 30px);
   }
 
   &__item {
@@ -71,14 +66,14 @@
   }
 
   &__icons {
-    display: flex;
+    @include flexbox();
     column-gap: 10px;
     padding: 0px 32px;
     padding-bottom: 30px;
   }
 
   &__contacts {
-    display: flex;
+    @include flexbox();
     width: 44px;
     height: 44px;
     border-radius: 23px;
