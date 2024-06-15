@@ -1,5 +1,18 @@
 %title-styles {
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 0.02em;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.02em;
+}
+
+%text-styles {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+}
+
+%button-styles {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: Roboto;
 }

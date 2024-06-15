@@ -8,9 +8,7 @@
     font-family: Roboto;
     font-size: 36px;
     font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 1.08px;
+    @extend %title-styles;
     margin-bottom: 50px;
   }
 

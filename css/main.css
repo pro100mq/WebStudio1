@@ -118,10 +118,23 @@ body {
     transform: translateY(0px);
   }
 }
-.modal__title, .basement__title, .footer__logo2, .footer__logo1, .team__title, .work__title, .info__title, .header__logo2, .header__logo1 {
+.modal__title, .basement__title, .footer__logo2, .footer__logo1, .customers__title, .team__title, .work__title, .info__title, .header__logo2, .header__logo1 {
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.02em;
+}
+
+.modal__agrlink, .modal__agrlabel, .footer__phone, .footer__email, .footer__address, .info__text {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+}
+
+.modal__button, .basement__button, .hero__button {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: Roboto;
 }
 
 .header {
@@ -320,10 +333,6 @@ body {
 }
 .hero__button {
   color: #ffffff;
-  text-align: center;
-  font-family: Roboto;
-  font-size: 16px;
-  font-weight: 700;
   line-height: 1.87;
   letter-spacing: 0.02em;
   width: 216px;
@@ -400,10 +409,7 @@ body {
 }
 .info__text {
   color: #757575;
-  font-size: 14px;
-  font-weight: 400;
   line-height: 1.7;
-  letter-spacing: 0.03em;
   font-family: Roboto;
 }
 
@@ -453,7 +459,7 @@ body {
   font-size: 14px;
   font-weight: 700;
   line-height: 16.41px;
-  letter-spacing: 0.03px;
+  letter-spacing: 0.03em;
   width: 370px;
   padding: 27px 0px;
   background-color: rgba(47, 48, 58, 0.8);
@@ -574,9 +580,6 @@ body {
   font-family: Roboto;
   font-size: 36px;
   font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 1.08px;
   margin-bottom: 50px;
 }
 .customers__icons {
@@ -668,10 +671,7 @@ body {
 }
 .footer__address {
   color: #ffffff;
-  font-size: 14px;
-  font-weight: 400;
   line-height: 1.71;
-  letter-spacing: 0.42px;
   word-wrap: break-word;
   font-style: normal;
   margin-bottom: 9px;
@@ -680,10 +680,7 @@ body {
 }
 .footer__email {
   color: #757575;
-  font-size: 14px;
-  font-weight: 400;
   line-height: 1.7;
-  letter-spacing: 0.03em;
   display: block;
   margin-bottom: 9px;
   text-decoration: none;
@@ -692,10 +689,7 @@ body {
 }
 .footer__phone {
   color: #757575;
-  font-size: 14px;
-  font-weight: 400;
   line-height: 1.7;
-  letter-spacing: 0.03em;
   text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
   font-family: Roboto;
@@ -798,11 +792,7 @@ body {
   background-color: #2196f3;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   color: #fff;
-  text-align: left;
-  font-family: Roboto;
-  font-size: 16px;
   font-style: normal;
-  font-weight: 700;
   line-height: 30px;
   letter-spacing: 0.96px;
   padding: 10px 28px 10px 28px;
@@ -983,22 +973,16 @@ body {
 }
 .modal__agrlabel {
   color: #757575;
-  font-size: 14px;
   font-style: normal;
-  font-weight: 400;
   line-height: 24px;
-  letter-spacing: 0.42px;
   margin-left: 7px;
   margin-right: 5px;
   font-family: Roboto;
 }
 .modal__agrlink {
   color: #2196f3;
-  font-size: 14px;
   font-style: normal;
-  font-weight: 400;
   line-height: 24px;
-  letter-spacing: 0.42px;
   text-decoration-line: underline;
   font-family: Roboto;
 }
@@ -1009,11 +993,7 @@ body {
   background-color: #2196f3;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   color: #fff;
-  text-align: center;
-  font-size: 16px;
   font-style: normal;
-  font-weight: 700;
   line-height: 30px;
   letter-spacing: 0.96px;
-  font-family: Roboto;
 }/*# sourceMappingURL=main.css.map */

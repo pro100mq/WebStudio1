@@ -90,6 +90,19 @@ input {
   letter-spacing: 0.02em;
 }
 
+.footer__phone, .footer__email, .footer__address {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+}
+
+.basement__button {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: Roboto;
+}
+
 @keyframes from-up {
   0% {
     transform: translateY(-300px);
@@ -474,10 +487,7 @@ input {
 }
 .footer__address {
   color: #ffffff;
-  font-size: 14px;
-  font-weight: 400;
   line-height: 1.71;
-  letter-spacing: 0.42px;
   word-wrap: break-word;
   font-style: normal;
   margin-bottom: 9px;
@@ -486,10 +496,7 @@ input {
 }
 .footer__email {
   color: #757575;
-  font-size: 14px;
-  font-weight: 400;
   line-height: 1.7;
-  letter-spacing: 0.03em;
   display: block;
   margin-bottom: 9px;
   text-decoration: none;
@@ -498,10 +505,7 @@ input {
 }
 .footer__phone {
   color: #757575;
-  font-size: 14px;
-  font-weight: 400;
   line-height: 1.7;
-  letter-spacing: 0.03em;
   text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
   font-family: Roboto;
@@ -604,11 +608,7 @@ input {
   background-color: #2196f3;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   color: #fff;
-  text-align: left;
-  font-family: Roboto;
-  font-size: 16px;
   font-style: normal;
-  font-weight: 700;
   line-height: 30px;
   letter-spacing: 0.96px;
   padding: 10px 28px 10px 28px;

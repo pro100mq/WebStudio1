@@ -31,10 +31,7 @@
 
   &__button {
     color: $accent-color;
-    text-align: center;
-    font-family: Roboto;
-    font-size: 16px;
-    font-weight: 700;
+    @extend %button-styles;
     line-height: 1.87;
     letter-spacing: 0.02em;
     width: 216px;
