@@ -1,31 +1,79 @@
 .customers {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  @media screen and (min-width: 480px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 
   &__title {
     color: $text-color;
     text-align: center;
     font-family: Roboto;
-    font-size: 36px;
     font-style: normal;
     @extend %title-styles;
-    margin-bottom: 50px;
+
+    @media screen and (min-width: 480px) {
+      font-size: 28px;
+      margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: 768px) {
+      font-size: 28px;
+      margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      font-size: 36px;
+      margin-bottom: 50px;
+    }
   }
 
   &__icons {
-    @include flexbox();
-    column-gap: 30px;
+    @include flexbox($gap: 30px);
+
+    @media screen and (min-width: 480px) {
+      flex-wrap: wrap;
+    }
+
+    @media screen and (min-width: 768px) {
+      flex-wrap: wrap;
+    }
+
+    @media screen and (min-width: 1200px) {
+      flex-wrap: nowrap;
+    }
   }
 
   &__contacts {
-    width: 170px;
-    height: 92px;
-    flex-shrink: 0;
     border-radius: 4px;
     border: 1px solid #afb1b8;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-property: border, fill;
     transition-duration: 250ms;
+
+    @media screen and (min-width: 480px) {
+      width: 210px;
+      height: 92px;
+    }
+
+    @media screen and (min-width: 768px) {
+      width: 226px;
+      height: 92px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 170px;
+      height: 92px;
+    }
 
     &:hover,
     &:focus {
@@ -57,18 +105,26 @@
     width: 106px;
     height: 60px;
     flex-shrink: 0;
-    padding: 16px 32px;
     fill: #afb1b8;
     cursor: pointer;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-property: fill;
     transition-duration: 250ms;
 
+    @media screen and (min-width: 480px) {
+      padding: 16px 52px;
+    }
+
+    @media screen and (min-width: 768px) {
+      padding: 16px 60px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      padding: 16px 32px;
+    }
+
     &:hover {
       fill: $hover-color;
-    }    
+    }
   }
 }
-
-
-
