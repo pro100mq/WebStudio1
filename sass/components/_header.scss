@@ -1,11 +1,24 @@
 .header {
-  padding-top: 24px;
-  padding-bottom: 25px;
-  background-color: $accent-color;
   width: 100%;
+  background-color: $accent-color;
   animation-name: from-up;
   animation-duration: 1s;
   border: $border-linia 1px solid;
+
+  @media screen and (min-width: 480px) {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
 
   &__container {
     @include flexbox($center-y: center);
@@ -24,21 +37,55 @@
   &__logo1 {
     color: $hover-color;
     font-family: Raleway;
-    font-size: 26px;
     @extend %title-styles;
+
+    @media screen and (min-width: 480px) {
+      font-size: 24px;
+    }
+
+    @media screen and (min-width: 768px) {
+      font-size: 24px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      font-size: 26px;
+    }
   }
 
   &__logo2 {
     color: $logo-text-color;
     font-family: Raleway;
-    font-size: 26px;
     @extend %title-styles;
+
+    @media screen and (min-width: 480px) {
+      font-size: 24px;
+    }
+
+    @media screen and (min-width: 768px) {
+      font-size: 24px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      font-size: 26px;
+    }
   }
 
   &__list {
-    margin-right: 344px;
-    margin-left: auto;
-    @include flexbox($gap: 50px);
+    @media screen and (min-width: 480px) {
+      display: none;
+    }
+
+    @media screen and (min-width: 768px) {
+      @include flexbox($gap: 50px);
+      margin-right: 96px;
+      margin-left: 88px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      @include flexbox($gap: 50px);
+      margin-right: 315px;
+      margin-left: auto;
+    }
   }
 
   &__item:hover &__link::after {
@@ -92,7 +139,27 @@
   }
 
   &__autorisations {
-    @include flexbox($gap: 50px);
+    @media screen and (min-width: 480px) {
+      opacity: 0;
+      pointer-events: none;
+      visibility: hidden;
+    }
+
+    @media screen and (min-width: 768px) {
+      opacity: 1;
+      pointer-events: all;
+      visibility: visible;
+      @include flexbox($gap: 10px);
+      flex-direction: column;
+    }
+
+    @media screen and (min-width: 1200px) {
+      opacity: 1;
+      pointer-events: all;
+      visibility: visible;
+      @include flexbox($gap: 30px);
+      flex-direction: row;
+    }
   }
 
   &__item2 {
@@ -153,6 +220,16 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-property: color, fill;
     transition-duration: 250ms;
+
+    @media screen and (min-width: 768px) {
+      width: 14px;
+      height: 10px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 16px;
+      height: 12px;
+    }
   }
 
   &__phone {
@@ -163,6 +240,16 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-property: color, fill;
     transition-duration: 250ms;
+
+    @media screen and (min-width: 768px) {
+      width: 10px;
+      height: 14px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 10px;
+      height: 16px;
+    }
   }
 
   &__autorisations &__item2:hover &__mail,

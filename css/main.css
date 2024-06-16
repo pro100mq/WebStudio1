@@ -79,9 +79,24 @@ body {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   margin: 0 auto;
-  padding: 0 15px;
+  outline: solid red 2px;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
 }
 
 @keyframes from-up {
@@ -138,13 +153,29 @@ body {
 }
 
 .header {
-  padding-top: 24px;
-  padding-bottom: 25px;
-  background-color: #ffffff;
   width: 100%;
+  background-color: #ffffff;
   animation-name: from-up;
   animation-duration: 1s;
   border: #ececec 1px solid;
+}
+@media screen and (min-width: 480px) {
+  .header {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
 }
 .header__container {
   display: flex;
@@ -163,20 +194,65 @@ body {
 .header__logo1 {
   color: #2196f3;
   font-family: Raleway;
-  font-size: 26px;
+}
+@media screen and (min-width: 480px) {
+  .header__logo1 {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header__logo1 {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__logo1 {
+    font-size: 26px;
+  }
 }
 .header__logo2 {
   color: #000;
   font-family: Raleway;
-  font-size: 26px;
 }
-.header__list {
-  margin-right: 344px;
-  margin-left: auto;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 50px;
+@media screen and (min-width: 480px) {
+  .header__logo2 {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header__logo2 {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__logo2 {
+    font-size: 26px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .header__list {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header__list {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+    margin-right: 96px;
+    margin-left: 88px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__list {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+    margin-right: 315px;
+    margin-left: auto;
+  }
 }
 .header__item:hover .header__link::after {
   opacity: 1;
@@ -223,11 +299,36 @@ body {
   transition-duration: 250ms;
   transition-property: #2196f3;
 }
-.header__autorisations {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 50px;
+@media screen and (min-width: 480px) {
+  .header__autorisations {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header__autorisations {
+    opacity: 1;
+    pointer-events: all;
+    visibility: visible;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__autorisations {
+    opacity: 1;
+    pointer-events: all;
+    visibility: visible;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    flex-direction: row;
+  }
 }
 .header__item2 {
   display: flex;
@@ -288,6 +389,18 @@ body {
   transition-property: color, fill;
   transition-duration: 250ms;
 }
+@media screen and (min-width: 768px) {
+  .header__mail {
+    width: 14px;
+    height: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__mail {
+    width: 16px;
+    height: 12px;
+  }
+}
 .header__phone {
   width: 10px;
   height: 16px;
@@ -296,6 +409,18 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: color, fill;
   transition-duration: 250ms;
+}
+@media screen and (min-width: 768px) {
+  .header__phone {
+    width: 10px;
+    height: 14px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__phone {
+    width: 10px;
+    height: 16px;
+  }
 }
 .header__autorisations .header__item2:hover .header__mail, .header__autorisations .header__item2:hover .header__phone, .header__autorisations .header__item2:hover .header__contacts, .header__contacts:focus .header__mail, .header__contacts:focus .header__phone, .header__contacts:focus {
   fill: #2196f3;
@@ -307,8 +432,24 @@ body {
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/working.webp);
   background-repeat: no-repeat;
   background-size: cover;
-  padding-bottom: 200px;
-  padding-top: 200px;
+}
+@media screen and (min-width: 480px) {
+  .hero {
+    padding-bottom: 118px;
+    padding-top: 118px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    padding-bottom: 118px;
+    padding-top: 118px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-bottom: 200px;
+    padding-top: 200px;
+  }
 }
 .hero__container {
   flex-direction: column;
@@ -320,32 +461,68 @@ body {
 .hero__title {
   color: #ffffff;
   text-align: center;
-  font-size: 44px;
   font-weight: 900;
-  line-height: 1.3;
-  letter-spacing: 0.04em;
   text-transform: uppercase;
   margin-bottom: 30px;
-  width: 696px;
   font-family: Roboto;
   animation-name: from-left;
   animation-duration: 1s;
+}
+@media screen and (min-width: 480px) {
+  .hero__title {
+    font-size: 26px;
+    line-height: 1.61em;
+    letter-spacing: 1.56px;
+    width: 360px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero__title {
+    font-size: 26px;
+    line-height: 1.61em;
+    letter-spacing: 1.56px;
+    width: 360px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.3em;
+    letter-spacing: 0.02;
+    width: 696px;
+  }
 }
 .hero__button {
   color: #ffffff;
   line-height: 1.87;
   letter-spacing: 0.02em;
-  width: 216px;
   height: 50px;
   flex-shrink: 0;
   border-radius: 4px;
   background-color: #2196f3;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   cursor: pointer;
-  padding: 10px 32px 10px 32px;
   border: none;
   animation-duration: from-right;
   animation-duration: 1s;
+}
+@media screen and (min-width: 480px) {
+  .hero__button {
+    width: 200px;
+    padding: 10px 24px 10px 24px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero__button {
+    width: 200px;
+    padding: 10px 24px 10px 24px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__button {
+    width: 216px;
+    padding: 10px 32px 10px 32px;
+  }
 }
 
 .info {

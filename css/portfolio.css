@@ -3,9 +3,24 @@ body {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   margin: 0 auto;
-  padding: 0 15px;
+  outline: solid red 2px;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
 }
 
 html, body, div, span, applet, object, iframe,
@@ -138,13 +153,29 @@ input {
   }
 }
 .header {
-  padding-top: 24px;
-  padding-bottom: 25px;
-  background-color: #ffffff;
   width: 100%;
+  background-color: #ffffff;
   animation-name: from-up;
   animation-duration: 1s;
   border: #ececec 1px solid;
+}
+@media screen and (min-width: 480px) {
+  .header {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
 }
 .header__container {
   display: flex;
@@ -163,20 +194,65 @@ input {
 .header__logo1 {
   color: #2196f3;
   font-family: Raleway;
-  font-size: 26px;
+}
+@media screen and (min-width: 480px) {
+  .header__logo1 {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header__logo1 {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__logo1 {
+    font-size: 26px;
+  }
 }
 .header__logo2 {
   color: #000;
   font-family: Raleway;
-  font-size: 26px;
 }
-.header__list {
-  margin-right: 344px;
-  margin-left: auto;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 50px;
+@media screen and (min-width: 480px) {
+  .header__logo2 {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header__logo2 {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__logo2 {
+    font-size: 26px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .header__list {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header__list {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+    margin-right: 96px;
+    margin-left: 88px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__list {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+    margin-right: 315px;
+    margin-left: auto;
+  }
 }
 .header__item:hover .header__link::after {
   opacity: 1;
@@ -223,11 +299,36 @@ input {
   transition-duration: 250ms;
   transition-property: #2196f3;
 }
-.header__autorisations {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 50px;
+@media screen and (min-width: 480px) {
+  .header__autorisations {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header__autorisations {
+    opacity: 1;
+    pointer-events: all;
+    visibility: visible;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__autorisations {
+    opacity: 1;
+    pointer-events: all;
+    visibility: visible;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    flex-direction: row;
+  }
 }
 .header__item2 {
   display: flex;
@@ -288,6 +389,18 @@ input {
   transition-property: color, fill;
   transition-duration: 250ms;
 }
+@media screen and (min-width: 768px) {
+  .header__mail {
+    width: 14px;
+    height: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__mail {
+    width: 16px;
+    height: 12px;
+  }
+}
 .header__phone {
   width: 10px;
   height: 16px;
@@ -296,6 +409,18 @@ input {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: color, fill;
   transition-duration: 250ms;
+}
+@media screen and (min-width: 768px) {
+  .header__phone {
+    width: 10px;
+    height: 14px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__phone {
+    width: 10px;
+    height: 16px;
+  }
 }
 .header__autorisations .header__item2:hover .header__mail, .header__autorisations .header__item2:hover .header__phone, .header__autorisations .header__item2:hover .header__contacts, .header__contacts:focus .header__mail, .header__contacts:focus .header__phone, .header__contacts:focus {
   fill: #2196f3;
