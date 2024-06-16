@@ -1,10 +1,17 @@
 .work {
-  padding-bottom: 94px;
-  padding-top: 94px;
+
+  @media screen and (min-width: 480px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: inline;
+  }
 
   &__container {
     flex-direction: column;
     @include flexbox($center-y: center);
+    padding-bottom: 94px;
   }
 
   &__title {
@@ -28,12 +35,12 @@
       animation-name: from-left;
       animation-duration: 1s;
     }
-    
+
     &:nth-child(2) {
       animation-name: from-up;
       animation-duration: 1s;
     }
-    
+
     &:last-child {
       animation-name: from-right;
       animation-duration: 1s;
@@ -55,13 +62,3 @@
     font-family: Roboto;
   }
 }
-
-
-
-
-
-
-
-
-
-
