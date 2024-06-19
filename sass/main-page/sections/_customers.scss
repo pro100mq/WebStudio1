@@ -1,8 +1,6 @@
 .customers {
-  @media screen and (min-width: 480px) {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
+  padding-top: 60px;
+  padding-bottom: 60px;
 
   @media screen and (min-width: 768px) {
     padding-top: 60px;
@@ -20,11 +18,8 @@
     font-family: Roboto;
     font-style: normal;
     @extend %title-styles;
-
-    @media screen and (min-width: 480px) {
-      font-size: 28px;
-      margin-bottom: 30px;
-    }
+    font-size: 28px;
+    margin-bottom: 30px;
 
     @media screen and (min-width: 768px) {
       font-size: 28px;
@@ -39,10 +34,7 @@
 
   &__icons {
     @include flexbox($gap: 30px);
-
-    @media screen and (min-width: 480px) {
-      flex-wrap: wrap;
-    }
+    flex-wrap: wrap;
 
     @media screen and (min-width: 768px) {
       flex-wrap: wrap;
@@ -59,11 +51,8 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-property: border, fill;
     transition-duration: 250ms;
-
-    @media screen and (min-width: 480px) {
-      width: 210px;
-      height: 92px;
-    }
+    width: 210px;
+    height: 92px;
 
     @media screen and (min-width: 768px) {
       width: 226px;
@@ -110,11 +99,8 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-property: fill;
     transition-duration: 250ms;
-
-    @media screen and (min-width: 480px) {
-      padding: 16px 52px;
-    }
-
+    padding: 16px 52px;
+    
     @media screen and (min-width: 768px) {
       padding: 16px 60px;
     }

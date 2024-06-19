@@ -7,9 +7,9 @@ body {
   margin: 0 auto;
   outline: solid red 2px;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .container {
-    max-width: 480px;
+    max-width: 320px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -47,6 +47,8 @@ time, mark, audio, video {
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
+  width: 100%;
+  max-width: 100%;
 }
 
 html {
@@ -158,12 +160,8 @@ input {
   animation-name: from-up;
   animation-duration: 1s;
   border: #ececec 1px solid;
-}
-@media screen and (min-width: 480px) {
-  .header {
-    padding-top: 16px;
-    padding-bottom: 16px;
-  }
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 @media screen and (min-width: 768px) {
   .header {
@@ -194,11 +192,7 @@ input {
 .header__logo1 {
   color: #2196f3;
   font-family: Raleway;
-}
-@media screen and (min-width: 480px) {
-  .header__logo1 {
-    font-size: 24px;
-  }
+  font-size: 24px;
 }
 @media screen and (min-width: 768px) {
   .header__logo1 {
@@ -213,11 +207,7 @@ input {
 .header__logo2 {
   color: #000;
   font-family: Raleway;
-}
-@media screen and (min-width: 480px) {
-  .header__logo2 {
-    font-size: 24px;
-  }
+  font-size: 24px;
 }
 @media screen and (min-width: 768px) {
   .header__logo2 {
@@ -229,10 +219,8 @@ input {
     font-size: 26px;
   }
 }
-@media screen and (min-width: 480px) {
-  .header__list {
-    display: none;
-  }
+.header__list {
+  display: none;
 }
 @media screen and (min-width: 768px) {
   .header__list {
@@ -299,12 +287,10 @@ input {
   transition-duration: 250ms;
   transition-property: #2196f3;
 }
-@media screen and (min-width: 480px) {
-  .header__autorisations {
-    opacity: 0;
-    pointer-events: none;
-    visibility: hidden;
-  }
+.header__autorisations {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
 }
 @media screen and (min-width: 768px) {
   .header__autorisations {

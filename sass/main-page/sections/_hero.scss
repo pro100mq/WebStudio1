@@ -6,11 +6,8 @@
     url(../img/working.webp);
   background-repeat: no-repeat;
   background-size: cover;
-
-  @media screen and (min-width: 480px) {
-    padding-bottom: 118px;
-    padding-top: 118px;
-  }
+  padding-bottom: 118px;
+  padding-top: 118px;
 
   @media screen and (min-width: 768px) {
     padding-bottom: 118px;
@@ -36,26 +33,16 @@
     font-family: Roboto;
     animation-name: from-left;
     animation-duration: 1s;
-
-    @media screen and (min-width: 480px) {
-      font-size: 26px;
-      line-height: 1.61em;
-      letter-spacing: 1.56px;
-      width: 360px; 
-    }
-
-    @media screen and (min-width: 768px) {
-      font-size: 26px;
-      line-height: 1.61em;
-      letter-spacing: 1.56px;
-      width: 360px; 
-    }
+    font-size: 26px;
+    line-height: 1.61em;
+    letter-spacing: 1.56px;
+    max-width: 360px;
 
     @media screen and (min-width: 1200px) {
       font-size: 44px;
       line-height: 1.3em;
       letter-spacing: 0.02;
-      width: 696px;
+      max-width: 696px;
     }
   }
 
@@ -73,22 +60,12 @@
     border: none;
     animation-duration: from-right;
     animation-duration: 1s;
+    max-width: 200px;
+    padding: 10px 24px 10px 24px;
 
-    @media screen and (min-width: 480px) {
-      width: 200px;
-      padding: 10px 24px 10px 24px; 
-    }
-  
-    @media screen and (min-width: 768px) {
-      width: 200px;
-      padding: 10px 24px 10px 24px; 
-    }
-  
     @media screen and (min-width: 1200px) {
-      width: 216px; 
+      max-width: 216px;
       padding: 10px 32px 10px 32px;
     }
   }
-
-
 }

@@ -4,11 +4,8 @@
   animation-name: from-up;
   animation-duration: 1s;
   border: $border-linia 1px solid;
-
-  @media screen and (min-width: 480px) {
-    padding-top: 16px;
-    padding-bottom: 16px;
-  }
+  padding-top: 16px;
+  padding-bottom: 16px;
 
   @media screen and (min-width: 768px) {
     padding-top: 26px;
@@ -38,10 +35,7 @@
     color: $hover-color;
     font-family: Raleway;
     @extend %title-styles;
-
-    @media screen and (min-width: 480px) {
-      font-size: 24px;
-    }
+    font-size: 24px;
 
     @media screen and (min-width: 768px) {
       font-size: 24px;
@@ -56,10 +50,7 @@
     color: $logo-text-color;
     font-family: Raleway;
     @extend %title-styles;
-
-    @media screen and (min-width: 480px) {
-      font-size: 24px;
-    }
+    font-size: 24px;
 
     @media screen and (min-width: 768px) {
       font-size: 24px;
@@ -71,9 +62,7 @@
   }
 
   &__list {
-    @media screen and (min-width: 480px) {
-      display: none;
-    }
+    display: none;
 
     @media screen and (min-width: 768px) {
       @include flexbox($gap: 50px);
@@ -139,11 +128,9 @@
   }
 
   &__autorisations {
-    @media screen and (min-width: 480px) {
-      opacity: 0;
-      pointer-events: none;
-      visibility: hidden;
-    }
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
 
     @media screen and (min-width: 768px) {
       opacity: 1;
