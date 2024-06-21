@@ -1,10 +1,34 @@
 .hero {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 
   &__list {
-    margin-bottom: 50px;
-    @include flexbox($gap: 8px, $position-x: center,);
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    @include flexbox($gap: 8px);
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 30px;
+      flex-wrap: nowrap;
+      justify-content: center;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 50px;
+      flex-wrap: nowrap;
+      justify-content: center;
+    }
   }
 
   &__item {
@@ -41,10 +65,8 @@
   }
 
   &__posters {
-    @include flexbox($center-y: center);
+    @include flexbox($center-y: center, $gap: 30px);
     flex-wrap: wrap;
-    column-gap: 30px;
-    row-gap: 30px;
   }
 
   &__link {
@@ -83,9 +105,22 @@
   }
 
   &__poster {
-    flex-basis: calc((100% - 2 * 30px) / 3);
     background-color: $accent-color;
     border: 1px solid #eeeeee;
+    max-width: 450px;
+    width: 100%;
+    max-height: 404px;
+
+    @media screen and (min-width: 768px) {
+      width: 354px;
+      height: 440px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 370px;
+      height: 404px;
+      flex-basis: calc((100% - 2 * 30px) / 3);
+    }
   }
 
   &__poster:hover &__overlay,
@@ -96,6 +131,24 @@
     position: absolute;
     transform: scaleY(1);
     transform-origin: bottom;
+    max-width: 480px;
+    width: 100%;
+    max-height: 294px;
+
+    @media screen and (min-width: 480px) {
+      width: 450px;
+      height: 294px;
+    }
+
+    @media screen and (min-width: 768px) {
+      width: 354px;
+      height: 294px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 370px;
+      height: 294px;
+    }
   }
 
   &__poster:hover &__overlaytext,
@@ -109,6 +162,21 @@
     position: absolute;
     opacity: 1;
     font-family: Roboto;
+
+    @media screen and (min-width: 480px) {
+      width: 402px;
+      font-size: 18px;
+    }
+
+    @media screen and (min-width: 768px) {
+      width: 306px;
+      font-size: 18px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 322px;
+      font-size: 18px;
+    }
   }
 
   &__poster:hover,
@@ -149,6 +217,27 @@
     padding-right: 24px;
     font-family: Roboto;
     @extend %title-styles;
+  }
+
+  &__image {
+    max-width: 450px;
+    width: 100%;
+    max-height: 294px;
+
+    @media screen and (min-width: 480px) {
+      width: 450px;
+      height: 294px;
+    }
+
+    @media screen and (min-width: 768px) {
+      width: 354px;
+      height: 294px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 370px;
+      height: 294px;
+    }
   }
 
   &__work {

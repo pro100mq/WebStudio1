@@ -23,39 +23,43 @@
   <body>
     <header class="header">
       <div class="container header__container">
-        <a href="../index.html" class="header__logo"
-          ><span class="header__logo1">Web</span
-          ><span class="header__logo2">Studio</span></a
-        >
-        <ul class="header__list">
-          <li class="header__item">
-            <a href="../index.html" class="header__link">Студія</a>
-          </li>
-          <li class="header__item">
-            <a href="./pages/portfolio.html" class="header__link">Портфоліо</a>
-          </li>
-          <li class="header__item">
-            <a href="contacts.html" class="header__link">Контакти</a>
-          </li>
-        </ul>
-        <ul class="header__autorisations">
-          <li class="header__item2">
-            <a href="info@devstudio.com" class="header__contacts">
-              <svg class="header__mail">
-                <use href="./img/symbol-defs.svg#icon-mail"></use>
-              </svg>
-              info@devstudio.com
-            </a>
-          </li>
-          <li class="header__item2">
-            <a href="+380961111111" class="header__contacts">
-              <svg class="header__phone">
-                <use href="./img/symbol-defs.svg#icon-phone"></use>
-              </svg>
-              +38 096 111 11 11
-            </a>
-          </li>
-        </ul>
+        <nav class="header__nav">
+          <a href="../index.html" class="header__logo"
+            ><span class="header__logo1">Web</span
+            ><span class="header__logo2">Studio</span></a
+          >
+          <ul class="header__list">
+            <li class="header__item">
+              <a href="../index.html" class="header__link">Студія</a>
+            </li>
+            <li class="header__item">
+              <a href="./pages/portfolio.html" class="header__link"
+                >Портфоліо</a
+              >
+            </li>
+            <li class="header__item">
+              <a href="contacts.html" class="header__link">Контакти</a>
+            </li>
+          </ul>
+          <ul class="header__autorisations">
+            <li class="header__item2">
+              <a href="info@devstudio.com" class="header__contacts">
+                <svg class="header__mail">
+                  <use href="./img/symbol-defs.svg#icon-mail"></use>
+                </svg>
+                info@devstudio.com
+              </a>
+            </li>
+            <li class="header__item2">
+              <a href="+380961111111" class="header__contacts">
+                <svg class="header__phone">
+                  <use href="./img/symbol-defs.svg#icon-phone"></use>
+                </svg>
+                +38 096 111 11 11
+              </a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </header>
     <main>
@@ -131,13 +135,7 @@
           <h2 class="team__title">Наша команда</h2>
           <ul class="team__list">
             <li class="team__item">
-              <img
-                class="team__photo"
-                src="./img/img3.webp"
-                width="270"
-                height="260"
-                alt="Worker1"
-              />
+              <img class="team__photo" src="./img/img3.webp" alt="Worker1" />
               <h3 class="team__name">Ігор Дем'яненко</h3>
               <p class="team__job">Product Designer</p>
               <div class="team__icons">
@@ -164,13 +162,7 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                class="team__photo"
-                src="./img/img4.webp"
-                width="270"
-                height="260"
-                alt="Worker2"
-              />
+              <img class="team__photo" src="./img/img4.webp" alt="Worker2" />
               <h3 class="team__name">Ольга Рєпіна</h3>
               <p class="team__job">Frontend Developer</p>
               <div class="team__icons">
@@ -197,13 +189,7 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                class="team__photo"
-                src="./img/img5.webp"
-                width="270"
-                height="260"
-                alt="Worker3"
-              />
+              <img class="team__photo" src="./img/img5.webp" alt="Worker3" />
               <h3 class="team__name">Микола Тарасов</h3>
               <p class="team__job">Marketing</p>
               <div class="team__icons">
@@ -230,13 +216,7 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                class="team__photo"
-                src="./img/img6.webp"
-                width="270"
-                height="260"
-                alt="Worker4"
-              />
+              <img class="team__photo" src="./img/img6.webp" alt="Worker4" />
               <h3 class="team__name">Михайло Єрмаков</h3>
               <p class="team__job">UI Designer</p>
               <div class="team__icons">
@@ -305,31 +285,33 @@
         </div>
       </section>
     </main>
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="footer__container container">
-        <ul class="footer__list">
-          <li class="footer__item">
-            <a href="../index.html" class="footer__logo"
-              ><span class="footer__logo1">Web</span
-              ><span class="footer__logo2">Studio</span></a
-            >
-          </li>
-          <li class="footer__item">
-            <address class="footer__address">
-              м. Київ, пр-т Лесі Українки, 26
-            </address>
-          </li>
-          <li class="footer__item">
-            <a class="footer__email" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li class="footer__item">
-            <a class="footer__phone" href="tel:+380961111111"
-              >+38 096 111 11 111</a
-            >
-          </li>
-        </ul>
+        <div class="footer__information">
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a href="../index.html" class="footer__logo"
+                ><span class="footer__logo1">Web</span
+                ><span class="footer__logo2">Studio</span></a
+              >
+            </li>
+            <li class="footer__item">
+              <address class="footer__address">
+                м. Київ, пр-т Лесі Українки, 26
+              </address>
+            </li>
+            <li class="footer__item">
+              <a class="footer__email" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="footer__item">
+              <a class="footer__phone" href="tel:+380961111111"
+                >+38 096 111 11 111</a
+              >
+            </li>
+          </ul>
+        </div>
         <div class="footer__icons">
           <h3 class="footer__subtitle">ПРИЄДНУЙТЕСЬ</h3>
           <ul class="footer__least">
@@ -384,7 +366,7 @@
           </form>
         </section>
       </div>
-    </footer> -->
+    </footer>
     <!-- <div data-modal class="backdrop is-hidden">
       <div class="modal">
         <form action="" class="modal__form">

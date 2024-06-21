@@ -6,7 +6,7 @@
     url(../img/working.webp);
   background-repeat: no-repeat;
   background-size: cover;
-  padding-bottom: 118px;
+  padding-bottom: 128px;
   padding-top: 118px;
 
   @media screen and (min-width: 768px) {
@@ -43,6 +43,7 @@
       line-height: 1.3em;
       letter-spacing: 0.02;
       max-width: 696px;
+      width: 696px;
     }
   }
 
