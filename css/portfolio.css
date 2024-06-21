@@ -199,7 +199,7 @@ input {
   text-decoration: none;
 }
 .header__logo1 {
-  display: block;
+  justify-content: left;
   color: #2196f3;
   font-family: Raleway;
   font-size: 24px;

@@ -1,6 +1,4 @@
 .team {
-  padding-top: 94px;
-  padding-bottom: 94px;
   background-color: $background-color-ourteam;
   padding-top: 60px;
   padding-bottom: 60px;
@@ -10,71 +8,20 @@
     padding-bottom: 94px;
   }
 
-  &__container {
-    @include flexbox($center-y: center, $position-x: center);
-    flex-direction: column;
-  }
-
   &__title {
     color: $text-color;
     text-align: center;
-    font-size: 36px;
     @extend %title-styles;
-    margin-bottom: 50px;
-    font-family: Roboto;
-    margin-bottom: 30px;
     font-size: 28px;
+    font-family: Roboto;
 
     @media screen and (min-width: 1200px) {
-      margin-bottom: 50px;
       font-size: 36px;
-    }
-  }
-
-  &__list {
-    @include flexbox($gap: 30px);
-    flex-wrap: wrap;
-
-    @media screen and (min-width: 1200px) {
-      flex-wrap: nowrap;
-    }
-  }
-
-  &__item {
-    background-color: $accent-color;
-    box-shadow: 0px 2px 1px 0px #00000033, 0px 1px 1px 0px #00000024,
-      0px 1px 3px 0px #0000001f;
-      max-width: 450px;
-      width: 100%;
-
-      @media screen and (min-width: 480px) {
-        width: 450px;
-      }
-
-      @media screen and (min-width: 768px) {
-        width: 354px;
-      }
-
-      @media screen and (min-width: 1200px) {
-        width: 270px;
-      }
-
-    &:first-child,
-    &:nth-child(2) {
-      animation-name: from-left;
-      animation-duration: 1s;
-    }
-
-    &:last-child,
-    &:nth-child(3) {
-      animation-name: from-right;
-      animation-duration: 1s;
     }
   }
 
   &__photo {
     max-width: 450px;
-    margin-bottom: 30px;
     width: 100%;
     height: 100%;
 
@@ -94,45 +41,87 @@
     }
   }
 
+  &__list {
+    @include flexbox($gap: 30px);
+    margin-top: 30px;
+    flex-wrap: wrap;
+
+    @media screen and (min-width: 1200px) {
+      margin-top: 50px;
+      flex-wrap: nowrap;
+    }
+  }
+
+  &__item {
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+      0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    background-color: $accent-color;
+    padding-bottom: 24px;
+    max-width: 450px;
+    width: 100%;
+
+    @media screen and (min-width: 480px) {
+      width: 450px;
+    }
+
+    @media screen and (min-width: 768px) {
+      width: 354px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      padding-bottom: 30px;
+      width: 270px;
+    }
+
+    &:first-child,
+    &:nth-child(2) {
+      animation-name: from-left;
+      animation-duration: 1s;
+    }
+
+    &:last-child,
+    &:nth-child(3) {
+      animation-name: from-right;
+      animation-duration: 1s;
+    }
+  }
+
   &__name {
+    margin-top: 30px;
     color: $text-color;
     text-align: center;
     font-size: 16px;
     font-weight: 500;
+    font-family: Roboto;
     line-height: normal;
     letter-spacing: 0.03em;
-    margin-bottom: 10px;
-    font-family: Roboto;
   }
 
   &__job {
+    margin-top: 10px;
+    font-family: Roboto;
     color: $additional-text-color;
     text-align: center;
     font-size: 16px;
     font-weight: 400;
     line-height: normal;
-    letter-spacing: 0.04em;
-    margin-bottom: 16px;
-    font-family: Roboto;
+    letter-spacing: 0.03em;
   }
 
   &__icons {
-    @include flexbox();
-    column-gap: 10px;
+    margin-top: 16px;
+    @include flexbox($gap: 10px);
     padding-left: 122px;
     padding-right: 122px;
-    padding-bottom: 24px;
 
     @media screen and (min-width: 768px) {
       padding-left: 74px;
       padding-right: 74px;
-      padding-bottom: 24px;
     }
 
     @media screen and (min-width: 1200px) {
       padding-left: 32px;
       padding-right: 32px;
-      padding-bottom: 30px;
     }
   }
 

@@ -40,7 +40,7 @@
   }
 
   &__logo1 {
-    display: block;
+    justify-content: left;
     color: $hover-color;
     font-family: Raleway;
     @extend %title-styles;
