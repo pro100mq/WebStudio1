@@ -24,10 +24,11 @@
     <header class="header">
       <div class="container header__container">
         <nav class="header__nav">
-          <a href="../index.html" class="header__logo"
+          <a href="../index.html" id="logo" class="header__logo"
             ><span class="header__logo1">Web</span
             ><span class="header__logo2">Studio</span></a
           >
+          <button type="button" class="header__button js-open-menu"><img src="./img/menu.png" alt="menu" class="header__menu"></button>
           <ul class="header__list">
             <li class="header__item">
               <a href="../index.html" class="header__link">Студія</a>
@@ -64,7 +65,7 @@
     </header>
     <main>
       <!-- Hero -->
-      <section class="hero">
+      <section class="hero__section">
         <div class="container hero__container">
           <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
           <button data-modal-open class="hero__button" type="button">
@@ -425,6 +426,43 @@
         </form>
       </div>
     </div>
+    <div class="menu js-menu-container is-hidden" id="mobile-menu">
+      <button type="submit" class="menu__btnclose js-close-menu">
+        <svg class="menu__icon">
+          <use href="./img/symbol-defs.svg#icon-close"></use>
+        </svg>
+      </button>
+      <ul class="menu__list">
+        <li class="menu__item">
+          <a href="./index.html" class="menu__link">Студія</a>
+        </li>
+        <li class="menu__item">
+          <a href="./pages/portfolio.html" class="menu__link">Портфоліо</a>
+        </li>
+        <li class="menu__item">
+          <a href="/" class="menu__link">Контакти</a>
+        </li>
+      </ul>
+      <ul class="menu__list2">
+        <li class="menu__items">
+          <a href="tel:+380961111111" class="menu__number">
+            +38 096 111 11 11
+          </a>
+        </li>
+        <li class="menu__items">
+          <a href="mailto:info@devstudio.com" class="menu__email">
+            info@devstudio.com
+          </a>
+        </li>
+      </ul>
+      <ul class="menu__list3">
+          <li class="menu__itm"><a href="https://www.instagram.com" class="menu__contacts">Instagram</a></li>
+          <li class="menu__itm"><a href="https://www.twitter.com" class="menu__contacts">Twitter</a></li>
+          <li class="menu__itm"><a href="https://www.facebook.com" class="menu__contacts">Facebook</a></li>
+          <li class="menu__itm"><a href="https://www.linkedin.com" class="menu__contacts">LinkedIn</a></li>
+      </ul>
+    </div>
+    <script defer src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

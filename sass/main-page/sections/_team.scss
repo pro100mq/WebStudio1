@@ -23,7 +23,7 @@
   &__photo {
     max-width: 450px;
     width: 100%;
-    height: 100%;
+    height: auto;
 
     @media screen and (min-width: 480px) {
       width: 450px;
@@ -111,8 +111,6 @@
   &__icons {
     margin-top: 16px;
     @include flexbox($gap: 10px);
-    padding-left: 122px;
-    padding-right: 122px;
 
     @media screen and (min-width: 768px) {
       padding-left: 74px;

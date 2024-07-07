@@ -1,0 +1,130 @@
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  display: none;
+}
+
+.menu {
+  display: flex;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: $accent-color;
+  flex-direction: column;
+  padding: auto;
+  padding-left: 40px;
+  padding-top: 48px;
+  margin: auto;
+
+  &__btnclose {
+    height: 30px;
+    width: 30px;
+    right: 8px;
+    top: 8px;
+    border: 1px #00000010 solid;
+    border-radius: 20px;
+    background-color: $accent-color;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__icon {
+    height: 18px;
+    $width: 18px;
+    fill: #00000010;
+
+    &:hover {
+      fill: $hover-color;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+    margin-bottom: 302px;
+  }
+
+  &__link {
+    color: $text-color;
+    font-family: Roboto;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.8px;
+    text-decoration: none;
+
+    &:hover {
+      color: $hover-color;
+    }
+  }
+
+  &__list2 {
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+  }
+
+  &__number {
+    color: $additional-text-color;
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.68px;
+    text-decoration: none;
+
+    &:hover {
+      font-size: 34px;
+      letter-spacing: 0.68px;
+      color: $hover-color;
+    }
+  }
+
+  &__email {
+    color: $additional-text-color;
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.48px;
+    text-decoration: none;
+
+    &:hover {
+      font-size: 34px;
+      letter-spacing: 0.68px;
+      color: $hover-color;
+    }
+  }
+
+  &__list3 {
+    display: flex;
+    margin-top: 64px;
+    column-gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  &__itm {
+    display: flex;
+    column-gap: 10px;
+  }
+
+  &__contacts {
+    color: $hover-color;
+    font-size: 18px;
+    text-decoration: none;
+  }
+
+  &__line {
+    width: 1px;
+    height: 22px;
+    background-color: $additional-text-color;
+  }
+}
