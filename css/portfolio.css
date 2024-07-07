@@ -998,7 +998,7 @@ input {
 .menu {
   display: flex;
   position: fixed;
-  z-index: 2;
+  z-index: 3;
   top: 0;
   left: 0;
   right: 0;
@@ -1009,6 +1009,16 @@ input {
   padding-left: 40px;
   padding-top: 48px;
   margin: auto;
+}
+@media screen and (min-width: 480px) and (min-width: 1200px) {
+  .menu {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .menu {
+    display: none;
+  }
 }
 .menu__btnclose {
   height: 30px;
