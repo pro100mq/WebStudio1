@@ -19,7 +19,7 @@
 }
 
 .modal {
-  width: 450px;
+  width: 440px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -27,24 +27,25 @@
   border-radius: 4px;
   background-color: $accent-color;
   padding: 40px;
+  z-index: 3;
 
   @media screen and (min-width: 480px) {
     width: 450px;
-}
+  }
 
-@media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     width: 528px;
-}
+  }
 
   &__form {
     flex-direction: column;
-    @include flexbox($center-y: center)
+    @include flexbox($center-y: center);
   }
 
   &__btnclose {
     position: absolute;
-    top: 8px;
-    right: 8px;
+    top: 9px;
+    right: 28px;
     width: 30px;
     height: 30px;
     border: solid 1px;
@@ -56,6 +57,18 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 250ms;
     transition-property: fill;
+
+    @media screen and (min-width: 768px) {
+      position: absolute;
+      top: 8px;
+      right: 8px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      position: absolute;
+      top: 8px;
+      right: 8px;
+    }
 
     &:hover {
       fill: $hover-color;
@@ -82,6 +95,7 @@
   }
 
   &__list {
+    width: 370px;
     flex-direction: column;
     @include flexbox($gap: 10px, $center-y: center);
   }
@@ -113,7 +127,6 @@
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     height: 40px;
-    width: 240px;
     padding-left: 41px;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 250ms;
@@ -180,7 +193,6 @@
     margin-top: 20px;
     margin-bottom: 30px;
     @include flexbox($position-x: center, $center-y: center);
-
   }
 
   &__agrinput {

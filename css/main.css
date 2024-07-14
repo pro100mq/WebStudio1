@@ -75,7 +75,6 @@ body {
 
 img {
   width: 100%;
-  max-width: 100%;
   display: block;
   height: auto;
 }
@@ -1281,7 +1280,7 @@ img {
 }
 
 .modal {
-  width: 450px;
+  width: 440px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1289,6 +1288,7 @@ img {
   border-radius: 4px;
   background-color: #ffffff;
   padding: 40px;
+  z-index: 3;
 }
 @media screen and (min-width: 480px) {
   .modal {
@@ -1309,8 +1309,8 @@ img {
 }
 .modal__btnclose {
   position: absolute;
-  top: 8px;
-  right: 8px;
+  top: 9px;
+  right: 28px;
   width: 30px;
   height: 30px;
   border: solid 1px;
@@ -1325,6 +1325,20 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 250ms;
   transition-property: fill;
+}
+@media screen and (min-width: 768px) {
+  .modal__btnclose {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal__btnclose {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+  }
 }
 .modal__btnclose:hover {
   fill: #2196f3;
@@ -1345,6 +1359,7 @@ img {
   font-family: Roboto;
 }
 .modal__list {
+  width: 370px;
   flex-direction: column;
   display: flex;
   justify-content: center;
@@ -1376,7 +1391,6 @@ img {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   height: 40px;
-  width: 240px;
   padding-left: 41px;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 250ms;
