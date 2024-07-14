@@ -1630,9 +1630,16 @@ img {
        column-gap: 10px;
 }
 .menu__contacts {
+  padding: auto;
   color: #2196f3;
   font-size: 18px;
   text-decoration: none;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  text-align: left;
 }
 .menu__line {
   width: 1px;

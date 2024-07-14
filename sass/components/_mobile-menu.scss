@@ -137,9 +137,16 @@
   }
 
   &__contacts {
+    padding: auto;
     color: $hover-color;
     font-size: 18px;
     text-decoration: none;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+    text-align: left;
   }
 
   &__line {
