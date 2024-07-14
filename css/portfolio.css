@@ -996,6 +996,8 @@ input {
 
 .menu {
   display: flex;
+  justify-content: space-between;
+  flex-direction: column;
   position: fixed;
   z-index: 3;
   top: 0;
@@ -1051,7 +1053,7 @@ input {
   display: flex;
   flex-direction: column;
   row-gap: 32px;
-  margin-bottom: 302px;
+  margin-bottom: auto;
 }
 .menu__link {
   color: #212121;
@@ -1066,10 +1068,14 @@ input {
 .menu__link:hover {
   color: #2196f3;
 }
+.menu__containers {
+  padding-bottom: 48px;
+}
 .menu__list2 {
   display: flex;
   flex-direction: column;
   row-gap: 32px;
+  padding: auto;
 }
 .menu__number {
   color: #757575;
