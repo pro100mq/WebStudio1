@@ -27,7 +27,9 @@
             ><span class="header__logo1">Web</span
             ><span class="header__logo2">Studio</span></a
           >
-          <button type="button" class="header__button js-open-menu"><img src="../img/menu.png" alt="menu" class="header__menu"></button>
+          <button type="button" class="header__button js-open-menu">
+            <img src="../img/menu.png" alt="menu" class="header__menu" />
+          </button>
           <ul class="header__list">
             <li class="header__item">
               <a href="../index.html" class="header__link">Студія</a>
@@ -45,7 +47,7 @@
             <li class="header__item2">
               <a href="info@devstudio.com" class="header__contacts">
                 <svg class="header__mail">
-                  <use href="./img/symbol-defs.svg#icon-mail"></use>
+                  <use href="../img/symbol-defs.svg#icon-mail"></use>
                 </svg>
                 info@devstudio.com
               </a>
@@ -53,7 +55,7 @@
             <li class="header__item2">
               <a href="+380961111111" class="header__contacts">
                 <svg class="header__phone">
-                  <use href="./img/symbol-defs.svg#icon-phone"></use>
+                  <use href="../img/symbol-defs.svg#icon-phone"></use>
                 </svg>
                 +38 096 111 11 11
               </a>
@@ -93,11 +95,34 @@
                     отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
                 </div>
-                <img
-                  class="hero__image"
-                  src="../img/laptop.webp"
-                  alt="laptop"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ../img/mobile/posters-laptop@mobile-1x.webp 1x,
+                      ../img/mobile/posters-laptop@mobile-2x.webp 2x
+                    "
+                    media="(min-width: 320px)"
+                  />
+                  <source
+                    srcset="
+                      ../img/tablet/posters-laptop@tablet-1x.webp 1x,
+                      ../img/tablet/posters-laptop@tablet-2x.webp 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ../img/desktop/posters-laptop@desktop-1x.webp 1x,
+                      ../img/desktop/posters-laptop@desktop-2x.webp 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    class="hero__image"
+                    src="../img/mobile/posters-laptop@mobile-1x.webp"
+                    alt="laptop"
+                  />
+                </picture>
                 <h3 class="hero__title">Технокряк</h3>
                 <p class="hero__work">Веб-сайт</p>
               </li>
@@ -111,11 +136,34 @@
                     отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
                 </div>
-                <img
-                  class="hero__image"
-                  src="../img/basketball.webp"
-                  alt="basketball"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ../img/mobile/posters-basketball@mobile-1x.webp 1x,
+                      ../img/mobile/posters-basketball@mobile-2x.webp 2x
+                    "
+                    media="(min-width: 320px)"
+                  />
+                  <source
+                    srcset="
+                      ../img/tablet/posters-basketball@tablet-1x.webp 1x,
+                      ../img/tablet/posters-basketball@tablet-2x.webp 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ../img/desktop/posters-basketball@desktop-1x.webp 1x,
+                      ../img/desktop/posters-basketball@desktop-2x.webp 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    class="hero__image"
+                    src="../img/mobile/posters-basketball@mobile-1x.webp"
+                    alt="basketball"
+                  />
+                </picture>
                 <h3 class="hero__title">Постер New Orlean vs Golden Star</h3>
                 <p class="hero__work">Дизайн</p>
               </li>
@@ -129,7 +177,34 @@
                     отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
                 </div>
-                <img class="hero__image" src="../img/fish.webp" alt="fish" />
+                <picture>
+                  <source
+                    srcset="
+                      ../img/mobile/posters-fish@mobile-1x.webp 1x,
+                      ../img/mobile/posters-fish@mobile-2x.webp 2x
+                    "
+                    media="(min-width: 320px)"
+                  />
+                  <source
+                    srcset="
+                      ../img/tablet/posters-fish@tablet-1x.webp 1x,
+                      ../img/tablet/posters-fish@tablet-2x.webp 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ../img/desktop/posters-fish@desktop-1x.webp 1x,
+                      ../img/desktop/posters-fish@desktop-2x.webp 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    class="hero__image"
+                    src="../img/mobile/posters-fish@mobile-1x.webp"
+                    alt="fish"
+                  />
+                </picture>
                 <h3 class="hero__title">Ресторан Seafood</h3>
                 <p class="hero__work">Додаток</p>
               </li>
@@ -143,11 +218,34 @@
                     отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
                 </div>
-                <img
-                  class="hero__image"
-                  src="../img/headphones.webp"
-                  alt="headphones"
+                <picture>
+                  <source
+                  srcset="
+                    ../img/mobile/posters-headphones@mobile-1x.webp 1x,
+                    ../img/mobile/posters-headphones@mobile-2x.webp 2x
+                  "
+                  media="(min-width: 320px)"
                 />
+                <source
+                  srcset="
+                    ../img/tablet/posters-headphones@tablet-1x.webp 1x,
+                    ../img/tablet/posters-headphones@tablet-2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ../img/desktop/posters-headphones@desktop-1x.webp 1x,
+                    ../img/desktop/posters-headphones@desktop-2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                  <img
+                    class="hero__image"
+                    src="../img/mobile/posters-headphones@mobile-1x.webp"
+                    alt="headphones"
+                  />
+                </picture>
                 <h3 class="hero__title">Проєкт Prime</h3>
                 <p class="hero__work">Маркетинг</p>
               </li>
@@ -161,7 +259,31 @@
                     отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
                 </div>
-                <img class="hero__image" src="../img/box.webp" alt="box" />
+                <picture>
+                  <source
+                  srcset="
+                    ../img/mobile/posters-box@mobile-1x.webp 1x,
+                    ../img/mobile/posters-box@mobile-2x.webp 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <source
+                  srcset="
+                    ../img/tablet/posters-box@tablet-1x.webp 1x,
+                    ../img/tablet/posters-box@tablet-2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ../img/desktop/posters-box@desktop-1x.webp 1x,
+                    ../img/desktop/posters-box@desktop-2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                  <img class="hero__image" src="../img/mobile/posters-box@mobile-1x.webp" alt="box" />
+                </picture>
+
                 <h3 class="hero__title">Проєкт Boxes</h3>
                 <p class="hero__work">Додаток</p>
               </li>
@@ -175,7 +297,31 @@
                     отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
                 </div>
-                <img class="hero__image" src="../img/pc.webp" alt="pc" />
+                <picture>
+                  <source
+                  srcset="
+                    ../img/mobile/posters-pc@mobile-1x.webp 1x,
+                    ../img/mobile/posters-pc@mobile-2x.webp 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <source
+                  srcset="
+                    ../img/tablet/posters-pc@tablet-1x.webp 1x,
+                    ../img/tablet/posters-pc@tablet-2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ../img/desktop/posters-pc@desktop-1x.webp 1x,
+                    ../img/desktop/posters-pc@desktop-2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                  <img class="hero__image" src="../img/mobile/posters-pc@mobile-1x.webp" alt="pc" />
+                </picture>
+                
                 <h3 class="hero__title">Inspiration has no Borders</h3>
                 <p class="hero__work">Веб-сайт</p>
               </li>
@@ -189,7 +335,31 @@
                     отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
                 </div>
-                <img class="hero__image" src="../img/book.webp" alt="book" />
+                <picture>
+                  <source
+                  srcset="
+                    ../img/mobile/posters-book@mobile-1x.webp 1x,
+                    ../img/mobile/posters-book@mobile-2x.webp 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <source
+                  srcset="
+                    ../img/tablet/posters-book@tablet-1x.webp 1x,
+                    ../img/tablet/posters-book@tablet-2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ../img/desktop/posters-book@desktop-1x.webp 1x,
+                    ../img/desktop/posters-book@desktop-2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                  <img class="hero__image" src="../img/mobile/posters-book@mobile-1x.webp" alt="book" />
+                </picture>
+                
                 <h3 class="hero__title">Видання Limited Edition</h3>
                 <p class="hero__work">Дизайн</p>
               </li>
@@ -203,7 +373,30 @@
                     отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
                 </div>
-                <img class="hero__image" src="../img/label.webp" alt="label" />
+                <picture>
+                  <source
+                  srcset="
+                    ../img/mobile/posters-label@mobile-1x.webp 1x,
+                    ../img/mobile/posters-label@mobile-2x.webp 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <source
+                  srcset="
+                    ../img/tablet/posters-label@tablet-1x.webp 1x,
+                    ../img/tablet/posters-label@tablet-2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ../img/desktop/posters-label@desktop-1x.webp 1x,
+                    ../img/desktop/posters-label@desktop-2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                  <img class="hero__image" src="../img/mobile/posters-label@mobile-1x.webp" alt="label" />
+                </picture>
                 <h3 class="hero__title">Проєкт LAB</h3>
                 <p class="hero__work">Маркетинг</p>
               </li>
@@ -217,7 +410,30 @@
                     отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
                 </div>
-                <img class="hero__image" src="../img/work.webp" alt="work" />
+                <picture>
+                  <source
+                  srcset="
+                    ../img/mobile/posters-work@mobile-1x.webp 1x,
+                    ../img/mobile/posters-work@mobile-2x.webp 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <source
+                  srcset="
+                    ../img/tablet/posters-work@tablet-1x.webp 1x,
+                    ../img/tablet/posters-work@tablet-2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ../img/desktop/posters-work@desktop-1x.webp 1x,
+                    ../img/desktop/posters-work@desktop-2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                  <img class="hero__image" src="../img/mobile/posters-work@mobile-1x.webp" alt="work" />
+                </picture>
                 <h3 class="hero__title">Growing Business</h3>
                 <p class="hero__work">Додаток</p>
               </li>
@@ -314,7 +530,7 @@
       </button>
       <ul class="menu__list">
         <li class="menu__item">
-          <a href="./index.html" class="menu__link">Студія</a>
+          <a href="../index.html" class="menu__link">Студія</a>
         </li>
         <li class="menu__item">
           <a href="./pages/portfolio.html" class="menu__link">Портфоліо</a>
@@ -336,10 +552,20 @@
         </li>
       </ul>
       <ul class="menu__list3">
-          <li class="menu__itm"><a href="https://www.instagram.com" class="menu__contacts">Instagram</a></li>
-          <li class="menu__itm"><a href="https://www.twitter.com" class="menu__contacts">Twitter</a></li>
-          <li class="menu__itm"><a href="https://www.facebook.com" class="menu__contacts">Facebook</a></li>
-          <li class="menu__itm"><a href="https://www.linkedin.com" class="menu__contacts">LinkedIn</a></li>
+        <li class="menu__itm">
+          <a href="https://www.instagram.com" class="menu__contacts"
+            >Instagram</a
+          >
+        </li>
+        <li class="menu__itm">
+          <a href="https://www.twitter.com" class="menu__contacts">Twitter</a>
+        </li>
+        <li class="menu__itm">
+          <a href="https://www.facebook.com" class="menu__contacts">Facebook</a>
+        </li>
+        <li class="menu__itm">
+          <a href="https://www.linkedin.com" class="menu__contacts">LinkedIn</a>
+        </li>
       </ul>
     </div>
     <script defer src="../js/mobile-menu.js"></script>

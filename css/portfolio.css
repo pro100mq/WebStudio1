@@ -1031,10 +1031,19 @@ input {
   position: absolute;
   justify-content: center;
   align-items: center;
+  border: solid 1px;
+  border-radius: 50%;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0px;
+  cursor: pointer;
+  stroke: rgba(0, 0, 0, 0.1);
 }
 .menu__icon {
   height: 18px;
-  fill: rgba(0, 0, 0, 0.062745098);
+  fill: #000;
 }
 .menu__icon:hover {
   fill: #2196f3;

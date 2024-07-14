@@ -37,12 +37,18 @@
     position: absolute;
     justify-content: center;
     align-items: center;
+    border: solid 1px;
+    border-radius: 50%;
+    color: $accent-color;
+    @include flexbox($center-y: center, $position-x: center);
+    cursor: pointer;
+    stroke: rgba(0, 0, 0, 0.1);
   }
 
   &__icon {
     height: 18px;
     $width: 18px;
-    fill: #00000010;
+    fill: $logo-text-color;
 
     &:hover {
       fill: $hover-color;
